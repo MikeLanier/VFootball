@@ -1,11 +1,11 @@
 <template>
-    <div style="position:static;">
+    <div style="position:static">
     </div>
 </template>
 
 <script>
 export default {
-    name: "v-scoreboard",
+    name: "v-stats",
 }
 </script>
 

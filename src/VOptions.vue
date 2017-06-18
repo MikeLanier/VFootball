@@ -5,7 +5,7 @@
 
 <script>
 export default {
-    name: "v-scoreboard",
+    name: "v-options",
 }
 </script>
 
