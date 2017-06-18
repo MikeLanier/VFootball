@@ -1,5 +1,5 @@
 <template>
-    <div style="position:static">
+    <div style="position:fixed">
     </div>
 </template>
 

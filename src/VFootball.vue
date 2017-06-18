@@ -38,28 +38,28 @@ export default {
 .scoreboard {
   left:0px;
   width:70%;
-  height:15%;
+  height:13%;
 }
 .field {
   left:0px;
   width:70%;
-  height:55%;
+  height:58%;
 }
 .text {
   left:0px;
   width:70%;
-  height:15%;
+  height:13%;
 }
 .options {
   left:0px;
   width:70%;
-  height:12%;
+  height:13%;
 }
 .stats {
   top:3px;
   right:3px;
-  height:100%;
-  width:30%;
+  height:98%;
+  width:29%;
 }
 .black-border {
   border:1px solid black;
@@ -70,19 +70,19 @@ export default {
   background-color: white;
 }
 .blue-background {
-  background-color: blue;
+  background-color: #aaffff;
 }
 .green-background {
-  background-color: green;
+  background-color: #aaffaa;
 }
 .red-background {
-  background-color: red;
+  background-color: #ffaaaa;
 }
 .yellow-background {
-  background-color: yellow;
+  background-color: #ffffaa;
 }
 .orange-background {
-  background-color: orange;
+  background-color: #ffccaa;
 }
 
 </style>
