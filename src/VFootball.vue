@@ -1,15 +1,35 @@
 <template>
   <div id="app" class="football black-border">
-    <v-scoreboard class="scoreboard black-border yellow-background"></v-scoreboard>
+        <div class="black-border">
+          <v-scoreboard></v-scoreboard>
+        </div>
+    <table>
+      <tr>
+        <td class="black-border">
+          <v-field></v-field>
+        </td>
+        <td class="black-border">
+          <v-stats></v-stats>
+        </td>
+      </tr>
+      <tr>
+        <td class="black-border">
+          <v-options></v-options>
+        </td>
+        <td class="black-border">
+          <v-text></v-text>
+        </td>
+      </tr>
+    </table>
+    <!-- <v-scoreboard class="scoreboard black-border yellow-background"></v-scoreboard>
     <v-field class="field black-border blue-background"></v-field>
     <v-text class="text black-border orange-background"></v-text>
     <v-options class="options black-border red-background"></v-options>
-    <v-stats class="stats black-border white-background"></v-stats>
+    <v-stats class="stats black-border white-background"></v-stats> -->
   </div>
 </template>
 
 <script>
-//    <v-stats class="stats black-border orange-background"></v-stats>
 import VScoreboard from "./VScoreboard.vue"
 import VField from "./VField.vue"
 import VText from "./VText.vue"
@@ -40,11 +60,6 @@ export default {
   width:70%;
   height:13%;
 }
-.field {
-  left:0px;
-  width:70%;
-  height:58%;
-}
 .text {
   left:0px;
   width:70%;
@@ -62,7 +77,7 @@ export default {
   width:29%;
 }
 .black-border {
-  border:1px solid black;
+  border:2px solid black;
   border-radius:5px;
   margin:3px;
 }
@@ -83,6 +98,26 @@ export default {
 }
 .orange-background {
   background-color: #ffccaa;
+}
+.item-header {
+    height: 16px;
+    width: 32px;
+}
+.item {
+    height: 32px;
+    width: 32px;
+}
+.name {
+    height: 32px;
+    width: 300px;
+}
+.name-header {
+    height: 16px;
+    width: 300px;
+}
+.black-border {
+    border: 1px solid black;
+    border-radius: 5px; 
 }
 
 </style>
