@@ -18,14 +18,10 @@
         </td>
         <td class="black-border">
           <v-text></v-text>
+          <v-debug></v-debug>
         </td>
       </tr>
     </table>
-    <!-- <v-scoreboard class="scoreboard black-border yellow-background"></v-scoreboard>
-    <v-field class="field black-border blue-background"></v-field>
-    <v-text class="text black-border orange-background"></v-text>
-    <v-options class="options black-border red-background"></v-options>
-    <v-stats class="stats black-border white-background"></v-stats> -->
   </div>
 </template>
 
@@ -35,9 +31,10 @@ import VField from "./VField.vue"
 import VText from "./VText.vue"
 import VOptions from "./VOptions.vue"
 import VStats from "./VStats.vue"
+import VDebug from "./VDebug.vue"
 export default {
   name: 'v-football',
-  components: { VScoreboard, VField, VText, VOptions, VStats },
+  components: { VScoreboard, VField, VText, VOptions, VStats, VDebug },
 
   data () {
     return {
@@ -55,7 +52,7 @@ export default {
   bottom:0px;
   background-color:green;
 }
-.scoreboard {
+/*.scoreboard {
   left:0px;
   width:70%;
   height:13%;
@@ -75,7 +72,7 @@ export default {
   right:3px;
   height:98%;
   width:29%;
-}
+}*/
 .black-border {
   border:2px solid black;
   border-radius:5px;
@@ -99,7 +96,7 @@ export default {
 .orange-background {
   background-color: #ffccaa;
 }
-.item-header {
+/*.item-header {
     height: 16px;
     width: 32px;
 }
@@ -114,7 +111,7 @@ export default {
 .name-header {
     height: 16px;
     width: 300px;
-}
+}*/
 .black-border {
     border: 1px solid black;
     border-radius: 5px; 

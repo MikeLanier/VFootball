@@ -4,14 +4,14 @@
 
 <script>
 export default {
-    name: "v-text",
+    name: "v-debug",
 }
 </script>
 
 <style>
 .text-panel {
   width:510PX;
-  height:45px;
+  height:8px;
 }
 .black-border {
   border:2px solid black;

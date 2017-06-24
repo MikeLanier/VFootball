@@ -1,5 +1,42 @@
 <template>
-    <div class="options-panel black-border white-background"></div>
+    <table>
+        <tr>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+        </tr>
+        <tr>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+        </tr>
+        <tr>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+        </tr>
+        <tr>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+            <th class="item black-border white-background"></th>
+        </tr>
+    </table>
 </template>
 
 <script>
@@ -9,6 +46,10 @@ export default {
 </script>
 
 <style>
+.item {
+    height: 16px;
+    width: 125px;
+}
 .options-panel {
   width:720PX;
   height:100px;
