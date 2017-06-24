@@ -8,7 +8,7 @@
         <td class="black-border">
           <v-field></v-field>
         </td>
-        <td class="black-border">
+        <td rowspan="2" class="black-border">
           <v-stats></v-stats>
         </td>
       </tr>
@@ -16,10 +16,14 @@
         <td class="black-border">
           <v-options></v-options>
         </td>
+      </tr>
+      <tr>
         <td class="black-border">
           <v-text></v-text>
-          <v-debug></v-debug>
         </td>
+        <!-- <td class="black-border">
+          <v-debug></v-debug>
+        </td> -->
       </tr>
     </table>
   </div>
@@ -52,27 +56,6 @@ export default {
   bottom:0px;
   background-color:green;
 }
-/*.scoreboard {
-  left:0px;
-  width:70%;
-  height:13%;
-}
-.text {
-  left:0px;
-  width:70%;
-  height:13%;
-}
-.options {
-  left:0px;
-  width:70%;
-  height:13%;
-}
-.stats {
-  top:3px;
-  right:3px;
-  height:98%;
-  width:29%;
-}*/
 .black-border {
   border:2px solid black;
   border-radius:5px;
@@ -96,25 +79,8 @@ export default {
 .orange-background {
   background-color: #ffccaa;
 }
-/*.item-header {
-    height: 16px;
-    width: 32px;
-}
-.item {
-    height: 32px;
-    width: 32px;
-}
-.name {
-    height: 32px;
-    width: 300px;
-}
-.name-header {
-    height: 16px;
-    width: 300px;
-}*/
 .black-border {
     border: 1px solid black;
     border-radius: 5px; 
 }
-
 </style>

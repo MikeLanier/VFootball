@@ -1,10 +1,21 @@
 <template>
-    <div class="field black-border white-background"></div>
+    <div id='field' :style="{ width: width, height: height }" class="black-border white-background"></div>
 </template>
 
 <script>
 export default {
     name: "v-field",
+    data: {
+        scale: 3
+    },
+    computed: {
+        width() {
+            return '1080px'
+        },
+        height() {
+            return '480px'
+        }
+    }
 }
 </script>
 

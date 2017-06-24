@@ -11,7 +11,7 @@ export default {
 <style>
 .stats-panel {
   width:510PX;
-  height:320px;
+  height:591px;
 }
 .black-border {
   border:2px solid black;
