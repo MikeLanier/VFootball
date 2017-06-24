@@ -10,7 +10,8 @@ export default {
 
 <style>
 .text-panel {
-  height:180px;
+  width:510PX;
+  height:100px;
 }
 .black-border {
   border:2px solid black;

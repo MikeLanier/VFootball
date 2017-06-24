@@ -21,9 +21,6 @@
         <td class="black-border">
           <v-text></v-text>
         </td>
-        <!-- <td class="black-border">
-          <v-debug></v-debug>
-        </td> -->
       </tr>
     </table>
   </div>
