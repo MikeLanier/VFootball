@@ -15,11 +15,11 @@
         </tr>
         <tr>
             <th class="name black-border white-background">Alabama</th>
-            <th class="item black-border white-background">0</th>
-            <th class="item black-border white-background">0</th>
-            <th class="item black-border white-background">0</th>
-            <th class="item black-border white-background">0</th>
-            <th class="item black-border white-background">0</th>
+            <th class="item black-border white-background">00</th>
+            <th class="item black-border white-background">00</th>
+            <th class="item black-border white-background">00</th>
+            <th class="item black-border white-background">00</th>
+            <th class="item black-border white-background">00</th>
             <th rowspan="2" class="item black-border white-background">1</th>
             <th rowspan="2" class="item black-border white-background">1st and 10</th>
             <th rowspan="2" class="item black-border white-background">ball on the Alabama 40</th>
@@ -66,7 +66,7 @@ export default {
 }
 .item-header-ball-on {
     height: 16px;
-    width: 200px;
+    width: 800px;
 }
 .item-header-down {
     height: 16px;

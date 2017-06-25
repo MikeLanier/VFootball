@@ -12,11 +12,11 @@
     <div class="options black-border">
       <v-options></v-options>
     </div>
-    <div class="debug black-border">
-      <v-debug></v-debug>
-    </div>
     <div class="stats black-border">
       <v-stats></v-stats>
+    </div>
+    <div class="debug black-border">
+      <v-debug></v-debug>
     </div>
   </div>
 </template>
@@ -44,56 +44,56 @@ export default {
 .football {
   position:absolute;
   left:0px;
-  top:0px; 
-  right:0px; 
+  top:0px;
+  right:0px;
   bottom:0px;
   background-color:green;
 }
 .scoreboard {
-  position:absolute;
+  /*position:absolute;
   left:0px;
-  top:0px; 
-  width:70%; 
-  height:15%;
-  background-color:lightgreen;
-}
-.stats {
-  position:absolute;
-  left:70%;
-  top:0px; 
-  width:28%; 
-  height:90%;
+  top:0px;*/
+  width:70%;
+  height:110px;
   background-color:lightgreen;
 }
 .field {
   position:absolute;
   left:0px;
-  top:15%; 
-  width:70%; 
-  height:50%;
+  top:115px;
+  width:70%;
+  height:360px;
   background-color:lightgreen;
 }
 .text {
   position:absolute;
   left:0px;
-  top:65%; 
-  width:70%; 
-  height:10%;
+  top:480px;
+  width:70%;
+  height:100px;
   background-color:lightgreen;
 }
 .options {
   position:absolute;
   left:0px;
-  top:75%; 
-  width:50%; 
-  height:15%;
+  bottom:0px;
+  /*width:50%;
+  height:15%;*/
+  background-color:lightgreen;
+}
+.stats {
+  position:absolute;
+  left:70.5%;
+  top:0px;
+  right:0px;
+  height:90%;
   background-color:lightgreen;
 }
 .debug {
   position:absolute;
   left:50%;
-  top:75%; 
-  width:18%; 
+  bottom:0px;
+  width:18%;
   height:15%;
   background-color:lightgreen;
 }
@@ -122,6 +122,6 @@ export default {
 }
 .black-border {
     border: 1px solid black;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 </style>

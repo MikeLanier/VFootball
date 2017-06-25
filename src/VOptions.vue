@@ -1,38 +1,38 @@
 <template>
     <table>
         <tr>
-            <th class="item black-border white-background">0-Line Plunge</th>
-            <th class="item black-border white-background">4-Option</th>
-            <th class="item black-border white-background">5-Screen</th>
-            <th class="item black-border white-background">14-Punt</th>
-            <th class="item black-border white-background">18-Standard</th>
-            <th class="item black-border white-background">22-Long Pass</th>
-            <th class="item black-border white-background">12-Kickoff</th>
+            <th class="option-button black-border white-background">0-Line Plunge</th>
+            <th class="option-button black-border white-background">4-Option</th>
+            <th class="option-button black-border white-background">5-Screen</th>
+            <th class="option-button black-border white-background">14-Punt</th>
+            <th class="option-button black-border white-background">18-Standard</th>
+            <th class="option-button black-border white-background">22-Long Pass</th>
+            <th class="option-button black-border white-background">12-Kickoff</th>
         </tr>
         <tr>
-            <th class="item black-border white-background">1-Counter</th>
-            <th class="item black-border white-background">26-Kneel</th>
-            <th class="item black-border white-background">6-Sprint Out</th>
-            <th class="item black-border white-background">24-Fake Punt</th>
-            <th class="item black-border white-background">19-Short Gaps</th>
-            <th class="item black-border white-background">23-Blitz</th>
-            <th class="item black-border white-background">29-Onsides Kick</th>
+            <th class="option-button black-border white-background">1-Counter</th>
+            <th class="option-button black-border white-background">26-Kneel</th>
+            <th class="option-button black-border white-background">6-Sprint Out</th>
+            <th class="option-button black-border white-background">24-Fake Punt</th>
+            <th class="option-button black-border white-background">19-Short Gaps</th>
+            <th class="option-button black-border white-background">23-Blitz</th>
+            <th class="option-button black-border white-background">29-Onsides Kick</th>
         </tr>
         <tr>
-            <th class="item black-border white-background">2-End Reverse</th>
-            <th class="item black-border white-background">27-QB Sneak</th>
-            <th class="item black-border white-background">7-Bootleg</th>
-            <th class="item black-border white-background">17-Fieldgoal</th>
-            <th class="item black-border white-background">20-Short Wide</th>
-            <th class="item black-border white-background">30-Squib Kick</th>
+            <th class="option-button black-border white-background">2-End Reverse</th>
+            <th class="option-button black-border white-background">27-QB Sneak</th>
+            <th class="option-button black-border white-background">7-Bootleg</th>
+            <th class="option-button black-border white-background">17-Fieldgoal</th>
+            <th class="option-button black-border white-background">20-Short Wide</th>
+            <th class="option-button black-border white-background">30-Squib Kick</th>
         </tr>
         <tr>
-            <th class="item black-border white-background">3-Draw</th>
-            <th class="item black-border white-background">28-Spike</th>
-            <th class="item black-border white-background">8-Drop Back</th>
-            <th class="item black-border white-background">25-Fake FG</th>
-            <th class="item black-border white-background">21-Short Pass</th>
-            <th class="item black-border white-background">30-Squib Kick</th>
+            <th class="option-button black-border white-background">3-Draw</th>
+            <th class="option-button black-border white-background">28-Spike</th>
+            <th class="option-button black-border white-background">8-Drop Back</th>
+            <th class="option-button black-border white-background">25-Fake FG</th>
+            <th class="option-button black-border white-background">21-Short Pass</th>
+            <th class="option-button3 black-border white-background">30-Squib Kick</th>
         </tr>
     </table>
 </template>
@@ -76,13 +76,9 @@ export default {
 </script>
 
 <style>
-.item {
+.option-button {
     height: 16px;
     width: 125px;
-}
-.options-panel {
-  width:720PX;
-  height:100px;
 }
 .black-border {
   border:2px solid black;

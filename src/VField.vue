@@ -11,7 +11,6 @@ export default {
 <style>
 .field-panel {
   position:absolute;
-  margin: 5px;
   top:0px;
   left:0px;
   right:0px;
