@@ -50,10 +50,7 @@ export default {
   background-color:green;
 }
 .scoreboard {
-  /*position:absolute;
-  left:0px;
-  top:0px;*/
-  width:70%;
+  width:1200px;
   height:110px;
   background-color:lightgreen;
 }
@@ -61,16 +58,16 @@ export default {
   position:absolute;
   left:0px;
   top:115px;
-  width:70%;
-  height:360px;
+  width:1200px;
+  height:520px;
   background-color:lightgreen;
 }
 .text {
   position:absolute;
   left:0px;
-  top:480px;
-  width:70%;
-  height:100px;
+  top:640px;
+  width:1200px;
+  height:178px;
   background-color:lightgreen;
 }
 .options {
@@ -83,18 +80,18 @@ export default {
 }
 .stats {
   position:absolute;
-  left:70.5%;
+  left:1205px;
   top:0px;
   right:0px;
-  height:90%;
+  bottom:0px;
   background-color:lightgreen;
 }
 .debug {
   position:absolute;
-  left:50%;
+  left:939px;
   bottom:0px;
-  width:18%;
-  height:15%;
+  width:260px;
+  height:48px;
   background-color:lightgreen;
 }
 .black-border {

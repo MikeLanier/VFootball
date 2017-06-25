@@ -7,7 +7,6 @@
             <th class="item-header black-border white-background">2</th>
             <th class="item-header black-border white-background">3</th>
             <th class="item-header black-border white-background">4</th>
-            <th class="item-header black-border white-background">Quarter</th>
             <th class="item-header-down black-border white-background">Down</th>
             <th class="item-header-ball-on black-border white-background">Ball On</th>
             <th class="item-header-time black-border white-background">Time</th>
@@ -20,7 +19,6 @@
             <th class="item black-border white-background">00</th>
             <th class="item black-border white-background">00</th>
             <th class="item black-border white-background">00</th>
-            <th rowspan="2" class="item black-border white-background">1</th>
             <th rowspan="2" class="item black-border white-background">1st and 10</th>
             <th rowspan="2" class="item black-border white-background">ball on the Alabama 40</th>
             <th rowspan="2" class="item black-border white-background">88.88</th>
@@ -45,10 +43,6 @@ export default {
 </script>
 
 <style>
-.scoreboard {
-  left:0px;
-  width:70%;
-}
 .black-border {
   border:1px solid black;
   border-radius:5px;
