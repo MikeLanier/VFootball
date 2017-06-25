@@ -1,28 +1,23 @@
 <template>
   <div id="app" class="football black-border">
-        <div class="black-border">
-          <v-scoreboard></v-scoreboard>
-        </div>
-    <table>
-      <tr>
-        <td class="black-border">
-          <v-field></v-field>
-        </td>
-        <td rowspan="2" class="black-border">
-          <v-stats></v-stats>
-        </td>
-      </tr>
-      <tr>
-        <td class="black-border">
-          <v-options></v-options>
-        </td>
-      </tr>
-      <tr>
-        <td class="black-border">
-          <v-text></v-text>
-        </td>
-      </tr>
-    </table>
+    <div class="scoreboard black-border">
+      <v-scoreboard></v-scoreboard>
+    </div>
+    <div class="field black-border">
+      <v-field></v-field>
+    </div>
+    <div class="text black-border">
+      <v-text></v-text>
+    </div>
+    <div class="options black-border">
+      <v-options></v-options>
+    </div>
+    <div class="debug black-border">
+      <v-debug></v-debug>
+    </div>
+    <div class="stats black-border">
+      <v-stats></v-stats>
+    </div>
   </div>
 </template>
 
@@ -33,6 +28,7 @@ import VText from "./VText.vue"
 import VOptions from "./VOptions.vue"
 import VStats from "./VStats.vue"
 import VDebug from "./VDebug.vue"
+
 export default {
   name: 'v-football',
   components: { VScoreboard, VField, VText, VOptions, VStats, VDebug },
@@ -46,12 +42,60 @@ export default {
 
 <style>
 .football {
-  position:fixed;
+  position:absolute;
   left:0px;
   top:0px; 
   right:0px; 
   bottom:0px;
   background-color:green;
+}
+.scoreboard {
+  position:absolute;
+  left:0px;
+  top:0px; 
+  width:70%; 
+  height:15%;
+  background-color:lightgreen;
+}
+.stats {
+  position:absolute;
+  left:70%;
+  top:0px; 
+  width:28%; 
+  height:90%;
+  background-color:lightgreen;
+}
+.field {
+  position:absolute;
+  left:0px;
+  top:15%; 
+  width:70%; 
+  height:50%;
+  background-color:lightgreen;
+}
+.text {
+  position:absolute;
+  left:0px;
+  top:65%; 
+  width:70%; 
+  height:10%;
+  background-color:lightgreen;
+}
+.options {
+  position:absolute;
+  left:0px;
+  top:75%; 
+  width:50%; 
+  height:15%;
+  background-color:lightgreen;
+}
+.debug {
+  position:absolute;
+  left:50%;
+  top:75%; 
+  width:18%; 
+  height:15%;
+  background-color:lightgreen;
 }
 .black-border {
   border:2px solid black;
