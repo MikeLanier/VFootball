@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="05574fbd-a4db-4a9e-9bd3-b3d2f6340d93" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VFootball.todo" afterPath="$PROJECT_DIR$/VFootball.todo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VOptions.vue" afterPath="$PROJECT_DIR$/src/VOptions.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -293,6 +291,12 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Create a button class for the options panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a button class for the options panel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
