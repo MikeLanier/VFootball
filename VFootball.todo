@@ -1,2 +1,30 @@
+New task      ctrl+Enter
+Cancel task   alt+c
+Complete task alt+d
+
 VFootball:
-☐ option buttons to change color on hover
+  EventBus:
+    ☐ create the event bus
+  Debug Panel:
+    ☐ parse debug options
+    ☐ post commands for options
+  Options Panel:
+    ☐ hilite on hover
+    ☐ hilite on select
+    ☐ post run command on select
+  Scoreboard Panel:
+    ☐ define template for data on Scoreboard
+    ☐ react to commands posted for scoreboard and update
+  Field Panel:
+    ☐ draw the basic field
+  Text Panel:
+    ☐ display text in a scrolling window
+    ☐ multicolor text
+  Stats Panel:
+    ☐ define template for stats data
+    ☐ update display from template
+  Teams:
+    ☐ function to read, and load Teams
+    ☐ ui for selecting Teams
+      ☐ team name
+      ☐ team name with helmet
