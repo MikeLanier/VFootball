@@ -99,26 +99,4 @@ export default {
   border-radius:5px;
   margin:3px;
 }
-.white-background {
-  background-color: white;
-}
-.blue-background {
-  background-color: #aaffff;
-}
-.green-background {
-  background-color: #aaffaa;
-}
-.red-background {
-  background-color: #ffaaaa;
-}
-.yellow-background {
-  background-color: #ffffaa;
-}
-.orange-background {
-  background-color: #ffccaa;
-}
-.black-border {
-    border: 1px solid black;
-    border-radius: 5px;
-}
 </style>
