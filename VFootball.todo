@@ -1,7 +1,3 @@
-New task      ctrl+Enter
-Cancel task   alt+c
-Complete task alt+d
-
 VFootball:
   EventBus:
     ☐ create the event bus
@@ -12,6 +8,7 @@ VFootball:
     ☐ hilite on hover
     ☐ hilite on select
     ☐ post run command on select
+    ☐ unhilite when another button pressed
   Scoreboard Panel:
     ☐ define template for data on Scoreboard
     ☐ react to commands posted for scoreboard and update

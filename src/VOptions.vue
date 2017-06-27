@@ -1,38 +1,38 @@
 <template>
     <table>
         <tr>
-            <th class="option-button black-border white-background">0-Line Plunge</th>
-            <th class="option-button black-border white-background">4-Option</th>
-            <th class="option-button black-border white-background">5-Screen</th>
-            <th class="option-button black-border white-background">14-Punt</th>
-            <th class="option-button black-border white-background">18-Standard</th>
-            <th class="option-button black-border white-background">22-Long Pass</th>
-            <th class="option-button black-border white-background">12-Kickoff</th>
+            <th class="option-button black-border white-background"><v-options-button @onClick="onClick" title="0-Line Plunge"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="4-Option"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="5-Screen"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="14-Punt"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="18-Standard"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="22-Long Pass"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="12-Kickoff"></v-options-button></th>
         </tr>
         <tr>
-            <th class="option-button black-border white-background">1-Counter</th>
-            <th class="option-button black-border white-background">26-Kneel</th>
-            <th class="option-button black-border white-background">6-Sprint Out</th>
-            <th class="option-button black-border white-background">24-Fake Punt</th>
-            <th class="option-button black-border white-background">19-Short Gaps</th>
-            <th class="option-button black-border white-background">23-Blitz</th>
-            <th class="option-button black-border white-background">29-Onsides Kick</th>
+            <th class="option-button black-border white-background"><v-options-button title="1-Counter"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="26-Kneel"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="6-Sprint Out"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="24-Fake Punt"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="19-Short Gaps"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="23-Blitz"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="29-Onsides Kick"></v-options-button></th>
         </tr>
         <tr>
-            <th class="option-button black-border white-background">2-End Reverse</th>
-            <th class="option-button black-border white-background">27-QB Sneak</th>
-            <th class="option-button black-border white-background">7-Bootleg</th>
-            <th class="option-button black-border white-background">17-Fieldgoal</th>
-            <th class="option-button black-border white-background">20-Short Wide</th>
-            <th class="option-button black-border white-background">30-Squib Kick</th>
+            <th class="option-button black-border white-background"><v-options-button title="2-End Reverse"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="27-QB Sneak"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="7-Bootleg"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="17-Fieldgoal"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="20-Short Wide"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="30-Squib Kick"></v-options-button></th>
         </tr>
         <tr>
-            <th class="option-button black-border white-background">3-Draw</th>
-            <th class="option-button black-border white-background">28-Spike</th>
-            <th class="option-button black-border white-background">8-Drop Back</th>
-            <th class="option-button black-border white-background">25-Fake FG</th>
-            <th class="option-button black-border white-background">21-Short Pass</th>
-            <th class="option-button3 black-border white-background">30-Squib Kick</th>
+            <th class="option-button black-border white-background"><v-options-button title="3-Draw"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="28-Spike"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="8-Drop Back"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="25-Fake FG"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button title="21-Short Pass"></v-options-button></th>
+            <th class="option-button3 black-border white-background"><v-options-button title="30-Squib Kick"></v-options-button></th>
         </tr>
     </table>
 </template>
@@ -70,8 +70,17 @@
 // id="kickoff"
 // id="onsides-kick"
 // id="squib-kick"
+
+import VOptionsButton from "./VOptionsButton.vue"
+
 export default {
     name: "v-options",
+    components: { VOptionsButton },
+    methods: {
+        onClick(event, props) {
+            console.log("onClick: " + props)
+        }
+    }
 }
 </script>
 
