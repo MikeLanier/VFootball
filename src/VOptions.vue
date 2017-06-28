@@ -1,7 +1,7 @@
 <template>
     <table>
         <tr>
-            <th class="option-button black-border white-background"><v-options-button @onClick="onClick" title="0-Line Plunge"></v-options-button></th>
+            <th class="option-button black-border white-background"><v-options-button @clickity="clickity" title="0-Line Plunge"></v-options-button></th>
             <th class="option-button black-border white-background"><v-options-button title="4-Option"></v-options-button></th>
             <th class="option-button black-border white-background"><v-options-button title="5-Screen"></v-options-button></th>
             <th class="option-button black-border white-background"><v-options-button title="14-Punt"></v-options-button></th>
@@ -79,6 +79,10 @@ export default {
     methods: {
         onClick(event, props) {
             console.log("onClick: " + props)
+        },
+        clickity(item, options) {
+            console.log('clickity: ' + item.selected)
+            item.selected = false;
         }
     }
 }
