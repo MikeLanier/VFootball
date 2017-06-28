@@ -17,7 +17,16 @@ export default {
     },
     watch: {
         selected: function() {
-            console.log('watch.selected')
+            // console.log('watch.selected: ' + this.title + ', ' + this.selected)
+            if(this.selected) {
+                this.backgroundColor = 'orange'
+            } else {
+                if(this.hovered) {
+                    this.backgroundColor = 'yellow'
+                } else {
+                    this.backgroundColor = 'white'
+                }
+            }
         }
     },
     methods: {
@@ -36,19 +45,19 @@ export default {
             }
         },
         click() {
-            console.log("click: " + this)
+            // console.log("click: " + this)
             this.selected = !this.selected
             this.$emit('clickity', this)
 
-            if(this.selected) {
-                this.backgroundColor = 'orange'
-            } else {
-                if(this.hovered) {
-                    this.backgroundColor = 'yellow'
-                } else {
-                    this.backgroundColor = 'white'
-                }
-            }
+            // if(this.selected) {
+            //     this.backgroundColor = 'orange'
+            // } else {
+            //     if(this.hovered) {
+            //         this.backgroundColor = 'yellow'
+            //     } else {
+            //         this.backgroundColor = 'white'
+            //     }
+            // }
         }
     }
 }
