@@ -29,8 +29,6 @@ export default {
         },
         click() {
             console.log("click: " + this.message + ", " + this.gamedata.down)
-            // var down = this.gamedata.down = this.gamedata.down + 1;
-            // console.log("click: " + this.message + ", " + this.gamedata.down)
             this.$emit('down', this.gamedata.down+1, 0)
         }
     }

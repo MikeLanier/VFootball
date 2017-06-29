@@ -39,12 +39,13 @@
 <script>
 export default {
     name: "v-scoreboard",
-    props: [ 'gamedata' ],
+    props: [ 'gamedata', 'down' ],
     watch: {
-        gamedata: {
-            handler: function(after, before) {
-                console.log('scoreboard: gamedata.down:  ' + this.gamedata.down)     
-            }
+        down() {
+            console.log('scoreboard: down:  ' + this.down)     
+        },
+        'gamedata.down': function() {
+            console.log('scoreboard: gamedata.down: ' + this.gamedata.down)
         }
     }
 }
