@@ -91,7 +91,7 @@ export default {
   left:939px;
   bottom:0px;
   width:260px;
-  height:48px;
+  height:32px;
   background-color:lightgreen;
 }
 .black-border {
