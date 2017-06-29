@@ -5,10 +5,11 @@ VFootball:
     ☐ parse debug options
     ☐ post commands for options
   Options Panel:
-    ☐ hilite on hover
-    ☐ hilite on select
+    ✘ hilite on hover @cancelled (6/28/2017, 8:35:36 PM)
+    ✘ hilite on select @cancelled (6/28/2017, 8:35:42 PM)
     ☐ post run command on select
-    ☐ unhilite when another button pressed
+    ✘ unhilite when another button pressed @cancelled (6/28/2017, 8:35:44 PM)
+    ☐ 
   Scoreboard Panel:
     ☐ define template for data on Scoreboard
     ☐ react to commands posted for scoreboard and update

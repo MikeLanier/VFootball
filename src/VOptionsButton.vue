@@ -12,19 +12,19 @@ export default {
         return {
             backgroundColor: 'white',           
             hovered: false,
-            selected: false,
-        }
+            selected: false
+        };
     },
     watch: {
         selected: function() {
             // console.log('watch.selected: ' + this.title + ', ' + this.selected)
             if(this.selected) {
-                this.backgroundColor = 'orange'
+                this.backgroundColor = 'orange';
             } else {
                 if(this.hovered) {
-                    this.backgroundColor = 'yellow'
+                    this.backgroundColor = 'yellow';
                 } else {
-                    this.backgroundColor = 'white'
+                    this.backgroundColor = 'white';
                 }
             }
         }
@@ -32,22 +32,22 @@ export default {
     methods: {
         mouseover() {
             // console.log("mouseover");
-            this.hovered = true
+            this.hovered = true;
             if(!this.selected) {
-                this.backgroundColor = 'yellow'
+                this.backgroundColor = 'yellow';
             }
         },
         mouseout() {
             // console.log("mouseout")
-            this.hovered = false
+            this.hovered = false;
             if(!this.selected) {
-                this.backgroundColor = 'white'
+                this.backgroundColor = 'white';
             }
         },
         click() {
             // console.log("click: " + this)
-            this.selected = !this.selected
-            this.$emit('clickity', this)
+            this.selected = !this.selected;
+            this.$emit('clickity', this);
 
             // if(this.selected) {
             //     this.backgroundColor = 'orange'
