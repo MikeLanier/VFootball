@@ -8,6 +8,7 @@
 <script>
 export default {
     name: "v-debug",
+    props: [ 'gamedata' ],
     data() {
         return {
             backgroundColor: 'white',
@@ -27,7 +28,10 @@ export default {
             console.log("mouseout")
         },
         click() {
-            console.log("click: " + this.message)
+            console.log("click: " + this.message + ", " + this.gamedata.down)
+            // var down = this.gamedata.down = this.gamedata.down + 1;
+            // console.log("click: " + this.message + ", " + this.gamedata.down)
+            this.$emit('down', this.gamedata.down+1, 0)
         }
     }
 }

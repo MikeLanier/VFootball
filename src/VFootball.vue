@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="football black-border">
     <div class="scoreboard black-border">
-      <v-scoreboard></v-scoreboard>
+      <v-scoreboard :gamedata="gamedata"></v-scoreboard>
     </div>
     <div class="field black-border">
       <v-field></v-field>
@@ -16,7 +16,7 @@
       <v-stats></v-stats>
     </div>
     <div class="debug black-border">
-      <v-debug></v-debug>
+      <v-debug :gamedata="gamedata" @down="down"></v-debug>
     </div>
   </div>
 </template>
@@ -35,6 +35,15 @@ export default {
 
   data () {
     return {
+      gamedata: {
+        down: 1
+      }
+    }
+  },
+  methods: {
+    down(v, options) {
+      console.log('VFootball: down: ' + v + ", " + options);
+      this.gamedata.down = v;
     }
   }
 }
