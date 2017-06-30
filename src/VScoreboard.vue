@@ -80,7 +80,21 @@ export default {
             console.log('scoreboard: gamedata.quarter: ' + this.gamedata.quarter)
         },
         'gamedata.time': function() {
-            console.log('scoreboard: gamedata.time: ' + this.gamedata.time)
+            console.log('scoreboard: gamedata.time: ' + this.gamedata.time);
+            var min = Math.floor(this.gamedata.time / 60);
+            var sec = this.gamedata.time - (min * 60);
+            console.log("   min, sec: " + min.toString() + ", " + sec.toString())
+
+            this.time = min.toString();
+            if(sec < 10)
+            {
+                this.time = this.time + ":0";
+            }
+            else
+            {
+                this.time = this.time + ":";
+            }
+            this.time = this.time + sec.toString();
         },
         'gamedata.score': function() {
             console.log('scoreboard: gamedata.score: ')

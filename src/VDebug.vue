@@ -60,21 +60,21 @@ export default {
             }
             else
             if(items[0] == 'g') {
-                items.gamedata.todo = parseInt(items[1]);
+                this.gamedata.todo = parseInt(items[1]);
             }
             else
             if(items[0] == 't') {
-                items.gamedata.time = parseInt(items[1]);
+                this.gamedata.time = parseInt(items[1]);
             }
             else
             if(items[0] == 'o') {
                 if(items[1] == 'h') {
-                    items.gamedata.offense = items.gamedata.home;
-                    items.gamedata.defense = items.gamedata.visitor;
+                    this.gamedata.offense = this.gamedata.home;
+                    this.gamedata.defense = this.gamedata.visitor;
                 }
                 else {
-                    items.gamedata.offense = items.gamedata.visitor;
-                    items.gamedata.defense = items.gamedata.home;                   
+                    this.gamedata.offense = this.gamedata.visitor;
+                    this.gamedata.defense = this.gamedata.home;                   
                 }
             }
         }
