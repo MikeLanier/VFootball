@@ -13,7 +13,7 @@
             <th class="item-header black-border white-background">TO</th>
         </tr>
         <tr>
-            <th class="name black-border white-background">Home</th>
+            <th class="name black-border white-background">{{gamedata.hname}}</th>
             <th class="item black-border white-background">{{gamedata.score[0][0]}}</th>
             <th class="item black-border white-background">{{gamedata.score[0][1]}}</th>
             <th class="item black-border white-background">{{gamedata.score[0][2]}}</th>
@@ -25,7 +25,7 @@
             <th class="item black-border white-background">{{gamedata.to[0]}}</th>
         </tr>
         <tr>
-            <th class="name black-border white-background">Visitor</th>
+            <th class="name black-border white-background">{{gamedata.vname}}</th>
             <th class="item black-border white-background">{{gamedata.score[1][0]}}</th>
             <th class="item black-border white-background">{{gamedata.score[1][1]}}</th>
             <th class="item black-border white-background">{{gamedata.score[1][2]}}</th>
@@ -49,10 +49,23 @@ export default {
     },
     watch: {
         'gamedata.down': function() {
-            console.log('scoreboard: gamedata.down: ' + this.gamedata.down)
+            console.log('gamedata.down');
+            this.format_down();
+            // console.log('scoreboard: gamedata.down: ' + this.gamedata.down)
+            // console.log('scoreboard: gamedata.togo: ' + this.gamedata.togo)
+
+            // if(this.gamedata.down == 1) { this.down = '1st and ' }
+            // else if(this.gamedata.down == 2)    {this.down = '2nd and '}
+            // else if(this.gamedata.down == 3)    {this.down = '3rd and '}
+            // else if(this.gamedown.down == 4)    {this.down = '4th and '}
+            // else {this.down = this.gamedata.down.toString() + ' and '}
+
+            // this.down = this.down + this.gamedata.togo.toString(); 
         },
         'gamedata.togo': function() {
-            console.log('scoreboard: gamedata.togo: ' + this.gamedata.togo)
+            console.log('gamedata.togo: ')
+            console.log('gamedata.down');
+            this.format_down();
         },
         'gamedata.yardline': function() {
             console.log('scoreboard: gamedata.yardline: ' + this.gamedata.yardline)
@@ -68,6 +81,27 @@ export default {
         },
         'gamedata.time': function() {
             console.log('scoreboard: gamedata.time: ' + this.gamedata.time)
+        },
+        'gamedata.score': function() {
+            console.log('scoreboard: gamedata.score: ')
+        },
+        'gamedata.offense': function() {
+            console.log('scoreboard: gamedata.offense: ' + this.gamedata.offense + ', ' + this.gamedata.defense)
+        }
+    },
+    methods: {
+        format_down() {
+            console.log('format_down')
+            console.log('scoreboard: gamedata.down: ' + this.gamedata.down)
+            console.log('scoreboard: gamedata.togo: ' + this.gamedata.togo)
+
+            if(this.gamedata.down == 1) { this.down = '1st and ' }
+            else if(this.gamedata.down == 2)    {this.down = '2nd and '}
+            else if(this.gamedata.down == 3)    {this.down = '3rd and '}
+            else if(this.gamedown.down == 4)    {this.down = '4th and '}
+            else {this.down = this.gamedata.down.toString() + ' and '}
+
+            this.down = this.down + this.gamedata.togo.toString(); 
         }
     }
 }

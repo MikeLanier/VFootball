@@ -39,7 +39,8 @@ export default {
         togo: 10,
         time: 900,
         to: [ 3, 3 ],
-//        teams: [ new JTeam(), new JTeam() ]
+        hname: 'HOME',
+        vname: 'VISITOR'
       }
     }
   },
