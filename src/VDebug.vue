@@ -1,6 +1,6 @@
 <template>
   <div style="margin:5px">
-    <input v-model="message" name="fname">
+    <input id="junk" v-model="message" name="fname">
     <div @click="click" class="debug-go-button">Go</div>
   </div>
 </template>
@@ -12,13 +12,19 @@ export default {
     data() {
         return {
             message: ''
+
         };
     },
     methods: {
         click() {
-            console.log("click: " + this.message + ", " + this.gamedata.down)
+            var items = this.message.split(',');
+            console.log("click: " + this.message);
+            console.log("items: " + items.length);
+            console.log("items[0]: " + items[0]);
+            console.log("items[1]: " + items[1]);
             this.gamedata.down = this.gamedata.down + 1;
-            this.message = "    ";
+            this.message = "";
+            document.getElementById('junk').focus();
         }
     }
 }

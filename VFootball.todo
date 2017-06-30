@@ -3,17 +3,21 @@ VFootball:
     ☐ create the event bus
   Debug Panel:
     ☐ parse debug options
-    ☐ post commands for options
+    ☐ option to change down: d,#
+    ☐ option to change score: s,h,#: s,v,#
+    ☐ option to change quarter: q,#
+    ☐ option to change yardline: y,#
+    ☐ option to change togo: g,#
+    ☐ option to change time: t,#
+    ☐ option to change offensive team: o,h: o,v
   Options Panel:
-    ✘ hilite on hover @cancelled (6/28/2017, 8:35:36 PM)
-    ✘ hilite on select @cancelled (6/28/2017, 8:35:42 PM)
+    ✔ hilite on hover @done (6/30/2017, 10:18:27 AM)
+    ✔ hilite on select @done (6/30/2017, 10:18:28 AM)
     ☐ post run command on select
-    ✘ unhilite when another button pressed @cancelled (6/28/2017, 8:35:44 PM)
-    ☐ 
+    ✔ unhilite when another button pressed @done (6/30/2017, 10:18:46 AM)
   Scoreboard Panel:
-    ☐ define template for data on Scoreboard
-    ☐ react to commands posted for scoreboard and update
-    ☐ update scoreboard from gamedata
+    ✔ define template for data on Scoreboard @done (6/30/2017, 10:17:44 AM)
+    ☐ watch for scoreboard data change in gamedata and update scoreboard
   Field Panel:
     ☐ draw the basic field
   Text Panel:
