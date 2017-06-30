@@ -1,23 +1,11 @@
 <template>
   <div id="app" class="football black-border">
-    <div class="scoreboard black-border">
-      <v-scoreboard :gamedata="gamedata"></v-scoreboard>
-    </div>
-    <div class="field black-border">
-      <v-field></v-field>
-    </div>
-    <div class="text black-border">
-      <v-text></v-text>
-    </div>
-    <div class="options black-border">
-      <v-options></v-options>
-    </div>
-    <div class="stats black-border">
-      <v-stats></v-stats>
-    </div>
-    <div class="debug black-border">
-      <v-debug :gamedata="gamedata" @down="down"></v-debug>
-    </div>
+    <div class="scoreboard black-border"><v-scoreboard :gamedata="gamedata"></v-scoreboard></div>
+    <div class="field black-border"><v-field :gamedata="gamedata"></v-field></div>
+    <div class="text black-border"><v-text :gamedata="gamedata"></v-text></div>
+    <div class="options black-border"><v-options :gamedata="gamedata"></v-options></div>
+    <div class="stats black-border"><v-stats :gamedata="gamedata"></v-stats></div>
+    <div class="debug black-border"><v-debug :gamedata="gamedata"></v-debug></div>
   </div>
 </template>
 
@@ -28,23 +16,54 @@ import VText from "./VText.vue"
 import VOptions from "./VOptions.vue"
 import VStats from "./VStats.vue"
 import VDebug from "./VDebug.vue"
+import JTeam from "./JTeam.js"
 
 export default {
   name: 'v-football',
   components: { VScoreboard, VField, VText, VOptions, VStats, VDebug },
 
-  data () {
+  data() {
     return {
       gamedata: {
-        down: 1
+        home: 1,
+        visitor: 0,
+        offense: 1,
+        defense: 0,
+        score: [
+          [ 1, 2, 3, 4, 5 ],
+          [ 6, 7, 8, 9, 10 ]
+        ],
+        quarter: 1,
+        down: 1,
+        yardline: 60,
+        togo: 10,
+        time: 900,
+        to: [ 3, 3 ],
+//        teams: [ new JTeam(), new JTeam() ]
       }
     }
   },
-  methods: {
-    down(v, options) {
-      console.log('VFootball: down: ' + v + ", " + options);
-      this.gamedata.down = v;
+  mounted: function() {
+    console.log('mounted: ')
+    var gd = {
+      home: 1,
+      visitor: 0,
+      offense: 1,
+      defense: 0,
+      score: [
+        [ 1, 2, 3, 4, 5 ],
+        [ 6, 7, 8, 9, 10 ]
+      ],
+      quarter: 1,
+      down: 1,
+      yardline: 60,
+      togo: 10,
+      time: 900,
+      to: [ 3, 3 ],
+//        teams: [ new JTeam(), new JTeam() ]
     }
+  },
+  methods: {
   }
 }
 </script>

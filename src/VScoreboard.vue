@@ -13,25 +13,25 @@
             <th class="item-header black-border white-background">TO</th>
         </tr>
         <tr>
-            <th class="name black-border white-background">Alabama</th>
-            <th class="item black-border white-background">00</th>
-            <th class="item black-border white-background">00</th>
-            <th class="item black-border white-background">00</th>
-            <th class="item black-border white-background">00</th>
-            <th class="item black-border white-background">00</th>
-            <th rowspan="2" class="item black-border white-background">1st and 10</th>
-            <th rowspan="2" class="item black-border white-background">ball on the Alabama 40</th>
-            <th rowspan="2" class="item black-border white-background">88.88</th>
-            <th class="item black-border white-background">3</th>
+            <th class="name black-border white-background">Home</th>
+            <th class="item black-border white-background">{{gamedata.score[0][0]}}</th>
+            <th class="item black-border white-background">{{gamedata.score[0][1]}}</th>
+            <th class="item black-border white-background">{{gamedata.score[0][2]}}</th>
+            <th class="item black-border white-background">{{gamedata.score[0][3]}}</th>
+            <th class="item black-border white-background">{{gamedata.score[0][4]}}</th>
+            <th rowspan="2" class="item black-border white-background">{{down}}</th>
+            <th rowspan="2" class="item black-border white-background">{{ballon}}</th>
+            <th rowspan="2" class="item black-border white-background">{{time}}</th>
+            <th class="item black-border white-background">{{gamedata.to[0]}}</th>
         </tr>
         <tr>
-            <th class="name black-border white-background">Auburn</th>
-            <th class="item black-border white-background">0</th>
-            <th class="item black-border white-background">0</th>
-            <th class="item black-border white-background">0</th>
-            <th class="item black-border white-background">0</th>
-            <th class="item black-border white-background">0</th>
-            <th class="item black-border white-background">3</th>
+            <th class="name black-border white-background">Visitor</th>
+            <th class="item black-border white-background">{{gamedata.score[1][0]}}</th>
+            <th class="item black-border white-background">{{gamedata.score[1][1]}}</th>
+            <th class="item black-border white-background">{{gamedata.score[1][2]}}</th>
+            <th class="item black-border white-background">{{gamedata.score[1][3]}}</th>
+            <th class="item black-border white-background">{{gamedata.score[1][4]}}</th>
+            <th class="item black-border white-background">{{gamedata.to[1]}}</th>
         </tr>
     </table>
 </template>
@@ -39,13 +39,35 @@
 <script>
 export default {
     name: "v-scoreboard",
-    props: [ 'gamedata', 'down' ],
+    props: [ 'gamedata' ],
+    data() {
+        return {
+            down: '1st and 10',
+            ballon: 'ball on the HOME 40 yards line',
+            time: '15.00'
+        }
+    },
     watch: {
-        down() {
-            console.log('scoreboard: down:  ' + this.down)     
-        },
         'gamedata.down': function() {
             console.log('scoreboard: gamedata.down: ' + this.gamedata.down)
+        },
+        'gamedata.togo': function() {
+            console.log('scoreboard: gamedata.togo: ' + this.gamedata.togo)
+        },
+        'gamedata.yardline': function() {
+            console.log('scoreboard: gamedata.yardline: ' + this.gamedata.yardline)
+        },
+        'gamedata.offense': function() {
+            console.log('scoreboard: gamedata.offense: ' + this.gamedata.offense)
+        },
+        'gamedata.defense': function() {
+            console.log('scoreboard: gamedata.defense: ' + this.gamedata.defense)
+        },
+        'gamedata.quarter': function() {
+            console.log('scoreboard: gamedata.quarter: ' + this.gamedata.quarter)
+        },
+        'gamedata.time': function() {
+            console.log('scoreboard: gamedata.time: ' + this.gamedata.time)
         }
     }
 }

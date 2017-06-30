@@ -13,6 +13,7 @@ VFootball:
   Scoreboard Panel:
     ☐ define template for data on Scoreboard
     ☐ react to commands posted for scoreboard and update
+    ☐ update scoreboard from gamedata
   Field Panel:
     ☐ draw the basic field
   Text Panel:
@@ -22,6 +23,7 @@ VFootball:
     ☐ define template for stats data
     ☐ update display from template
   Teams:
+    ☐ some kind of structure to contain teams
     ☐ function to read, and load Teams
     ☐ ui for selecting Teams
       ☐ team name
