@@ -2,22 +2,30 @@ VFootball:
   EventBus:
     ☐ create the event bus
   Debug Panel:
-    ☐ parse debug options
-    ☐ option to change down: d,#
-    ☐ option to change score: s,h,#: s,v,#
-    ☐ option to change quarter: q,#
-    ☐ option to change yardline: y,#
-    ☐ option to change togo: g,#
-    ☐ option to change time: t,#
-    ☐ option to change offensive team: o,h: o,v
+    ✔ parse debug options @done (6/30/2017, 7:07:43 PM)
+    ✔ option to change down: d,# @done (6/30/2017, 7:07:48 PM)
+    ✔ option to change score: s,h,#: s,v,# @done (6/30/2017, 7:07:49 PM)
+    ✔ option to change quarter: q,# @done (6/30/2017, 7:07:50 PM)
+    ✔ option to change yardline: y,# @done (6/30/2017, 7:07:51 PM)
+    ✔ option to change togo: g,# @done (6/30/2017, 7:07:51 PM)
+    ✔ option to change time: t,# @done (6/30/2017, 7:07:52 PM)
+    ✔ option to change offensive team: o,h: o,v @done (6/30/2017, 7:07:53 PM)
   Options Panel:
     ✔ hilite on hover @done (6/30/2017, 10:18:27 AM)
     ✔ hilite on select @done (6/30/2017, 10:18:28 AM)
     ☐ post run command on select
     ✔ unhilite when another button pressed @done (6/30/2017, 10:18:46 AM)
   Scoreboard Panel:
-    ✔ define template for data on Scoreboard @done (6/30/2017, 10:17:44 AM)
-    ☐ watch for scoreboard data change in gamedata and update scoreboard
+    ✔ define template for data on Scoreboard @done (6/30/2017, 7:10:15 PM)
+    ✔ update down on down change @done (6/30/2017, 7:10:09 PM)
+    ✔ update down on togo change @done (6/30/2017, 7:10:12 PM)
+    ☐ update team on team change
+    ✔ update score on score change @done (7/1/2017, 12:59:30 PM)
+    ✔ update ballon on yardline change @done (7/1/2017, 12:59:09 PM)
+    ✔ update ballon on offense change @done (7/1/2017, 12:59:13 PM)
+    ✔ update time on time change @done (6/30/2017, 7:10:22 PM)
+    ☐ update to on to change
+    ✔ update score heading on quarter change @done (7/1/2017, 12:59:19 PM)
   Field Panel:
     ☐ draw the basic field
   Text Panel:

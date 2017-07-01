@@ -27,8 +27,8 @@ export default {
       gamedata: {
         home: 1,
         visitor: 0,
-        offense: 1,
-        defense: 0,
+        offense: 0,
+        defense: 1,
         score: [
           [ 1, 2, 3, 4, 5 ],
           [ 6, 7, 8, 9, 10 ]
@@ -39,8 +39,7 @@ export default {
         togo: 10,
         time: 900,
         to: [ 3, 3 ],
-        hname: 'HOME',
-        vname: 'VISITOR'
+        name: [ 'HOME', 'VISITOR' ]
       }
     }
   },

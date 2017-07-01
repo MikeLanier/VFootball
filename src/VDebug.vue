@@ -46,8 +46,8 @@ export default {
                 console.log("gamedata.score[0]: " + this.gamedata.score[0][0] + ", " + this.gamedata.score[0][1] + ", " + this.gamedata.score[0][2] + ", " + this.gamedata.score[0][3] + ", " + this.gamedata.score[0][4])
                 console.log("gamedata.score[1]: " + this.gamedata.score[1][0] + ", " + this.gamedata.score[1][1] + ", " + this.gamedata.score[1][2] + ", " + this.gamedata.score[1][3] + ", " + this.gamedata.score[0][4])
 
-                this.gamedata.hname = "home" + val.toString()
-                this.gamedata.vname = "visitor" + val.toString()
+                this.gamedata.name[0] = "HOME" + val.toString()
+                this.gamedata.name[1] = "VISITOR" + val.toString()
 
             }
             else
@@ -60,7 +60,7 @@ export default {
             }
             else
             if(items[0] == 'g') {
-                this.gamedata.todo = parseInt(items[1]);
+                this.gamedata.togo = parseInt(items[1]);
             }
             else
             if(items[0] == 't') {
