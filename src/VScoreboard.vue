@@ -52,13 +52,17 @@ export default {
         }
     },
     watch: {
+        'gamedata.trigger': function() {
+            console.log('scoreboard: trigger');
+            this.format_names();
+        },
         'gamedata.down': function() {
-            console.log('gamedata.down');
+            console.log('scoreboard: gamedata.down');
             this.format_down();
         },
         'gamedata.togo': function() {
-            console.log('gamedata.togo: ')
-            console.log('gamedata.down');
+            console.log('scoreboard: gamedata.togo: ')
+            console.log('scoreboard: gamedata.down');
             this.format_down();
         },
         'gamedata.yardline': function() {
@@ -68,6 +72,7 @@ export default {
         'gamedata.offense': function() {
             console.log('scoreboard: gamedata.offense: ' + this.gamedata.offense)
             this.format_ballon();
+            this.format_names();
         },
         'gamedata.defense': function() {
             console.log('scoreboard: gamedata.defense: ' + this.gamedata.defense)
@@ -104,8 +109,20 @@ export default {
         }
     },
     methods: {
+        format_names() {
+            console.log('scoreboard: format_names: offense: ' + this.gamedata.offense)
+
+            if(this.gamedata.offense == 0) {
+                this.homebackground = 'yellow';
+                this.visitorbackground = 'white';
+            }
+            else {
+                this.homebackground = 'white';
+                this.visitorbackground = 'yellow';
+            }
+        },
         format_down() {
-            console.log('format_down')
+            console.log('scoreboard: format_down')
             console.log('scoreboard: gamedata.down: ' + this.gamedata.down)
             console.log('scoreboard: gamedata.togo: ' + this.gamedata.togo)
 
@@ -118,7 +135,7 @@ export default {
             this.down = this.down + this.gamedata.togo.toString(); 
         },
         format_ballon() {
-            console.log('format_ballon')
+            console.log('scoreboard: format_ballon')
             console.log("  yardline: " + this.gamedata.yardline)
             console.log("  offense: " + this.gamedata.offense)
             var ballon = 'ball ';
@@ -126,7 +143,7 @@ export default {
                 ballon = ballon + 'at midfield'
             }
             else {
-                console.log('yardline: ' + this.gamedata.yardline)
+                console.log('scoreboard: yardline: ' + this.gamedata.yardline)
                 var yardline = 0;
                 var team = 0;
 
@@ -143,7 +160,6 @@ export default {
 
                 this.ballon = "at the " + this.gamedata.name[team] + " " + yardline.toString() + " yardline";
             }
-
         }
     }
 }

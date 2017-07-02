@@ -25,8 +25,7 @@ export default {
   data() {
     return {
       gamedata: {
-        home: 1,
-        visitor: 0,
+        trigger: 0,
         offense: 0,
         defense: 1,
         score: [

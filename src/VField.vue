@@ -24,6 +24,7 @@
 <script>
 export default {
   name: "v-field",
+  props: [ 'gamedata' ],
   data() {
     return {
       width: '360px',
@@ -34,7 +35,9 @@ export default {
       margin: "10px",
       imargin: 10,
       background_color: 'green',
-      border: "1px solid white"
+      border: "1px solid white",
+      lineofscrimmage: null,
+      linetomake: null
     }
   },
   mounted() {
@@ -129,10 +132,94 @@ export default {
       // yardnumber.style.border = '1px solid white';
       field.appendChild(yardnumber);
 
+      var y = h - 55;
+
+      if(i == 0) {
+        yardnumber = document.createElement('div');
+        yardnumber.style.position='absolute';
+        yardnumber.style.left = x.toString() + 'px';
+        yardnumber.style.top = y.toString() + 'px';
+        yardnumber.style.height = boxsize;
+        yardnumber.style.width = boxsize;
+        yardnumber.innerText = yardnumbers[i+1];
+        yardnumber.style.textAlign = 'left';
+        yardnumber.style.fontSize = fontSize.toString() + '%';
+        yardnumber.style.fontFamily = 'Impact';
+        yardnumber.style.color = 'white';
+        yardnumber.style.transform = 'rotate(180deg)'
+        // yardnumber.style.border = '1px solid white';
+        field.appendChild(yardnumber);
+      }
+      else {
+        yardnumber = document.createElement('div');
+        yardnumber.style.position='absolute';
+        yardnumber.style.left = x.toString() + 'px';
+        yardnumber.style.top = y.toString() + 'px';
+        yardnumber.style.height = boxsize;
+        yardnumber.style.width = boxsize;
+        yardnumber.innerText = yardnumbers[i];
+        yardnumber.style.textAlign = 'left';
+        yardnumber.style.fontSize = fontSize.toString() + '%';
+        yardnumber.style.fontFamily = 'Impact';
+        yardnumber.style.color = 'white';
+        yardnumber.style.transform = 'rotate(180deg)'
+        // yardnumber.style.border = '1px solid white';
+        field.appendChild(yardnumber);
+
+        yardnumber = document.createElement('div');
+        yardnumber.style.position='absolute';
+        yardnumber.style.left = x.toString() + 'px';
+        yardnumber.style.top = y.toString() + 'px';
+        yardnumber.style.height = boxsize;
+        yardnumber.style.width = boxsize;
+        yardnumber.innerText = yardnumbers[i+1];
+        yardnumber.style.textAlign = 'right';
+        yardnumber.style.fontSize = fontSize.toString() + '%';
+        yardnumber.style.fontFamily = 'Impact';
+        yardnumber.style.color = 'white';
+        yardnumber.style.transform = 'rotate(180deg)'
+        // yardnumber.style.border = '1px solid white';
+        field.appendChild(yardnumber);
+      }
+
       x = x + 30 * this.scale;
     }
 
-  } // mounted
+    var x = this.imargin + 30 * this.scale;
+    this.lineofscrimmage = document.createElement('div');
+    this.lineofscrimmage.style.borderLeft='medium solid';
+    this.lineofscrimmage.style.position='absolute';
+    this.lineofscrimmage.style.left = x.toString() + 'px';
+    this.lineofscrimmage.style.height = this.height;
+    this.lineofscrimmage.style.border = '1px solid blue';
+    field.appendChild(this.lineofscrimmage);
+
+    this.linetomake = document.createElement('div');
+    this.linetomake.style.borderLeft='medium solid';
+    this.linetomake.style.position='absolute';
+    this.linetomake.style.left = x.toString() + 'px';
+    this.linetomake.style.height = this.height;
+    this.linetomake.style.border = '1px solid yellow';
+    field.appendChild(this.linetomake);
+
+  }, // mounted
+  watch: {
+    'gamedata.togo': function() {
+        console.log('field: gamedata.togo: ' + this.gamedata.togo)
+    },
+    'gamedata.yardline': function() {
+      console.log('field: gamedata.yardline: ' + this.gamedata.yardline)
+      var x = this.imargin + 30 * this.scale;
+      x = x + (100 - this.gamedata.yardline) * this.scale * 3;
+      this.linetomake.style.left = x.toString() + 'px';
+    },
+    'gamedata.offense': function() {
+        console.log('field: gamedata.offense: ' + this.gamedata.offense)
+    },
+    'gamedata.defense': function() {
+        console.log('field: gamedata.defense: ' + this.gamedata.defense)
+    }
+  }
 }
 </script>
 

@@ -23,10 +23,10 @@ export default {
         },
         click() {
             var items = this.message.split(',');
-            // console.log("click: " + this.message);
-            // console.log("items: " + items.length);
-            // console.log("items[0]: " + items[0]);
-            // console.log("items[1]: " + items[1]);
+            // console.log("debug: click: " + this.message);
+            // console.log("debug: items: " + items.length);
+            // console.log("debug: items[0]: " + items[0]);
+            // console.log("debug: items[1]: " + items[1]);
             this.message = "";
             document.getElementById('junk').focus();
 
@@ -35,16 +35,18 @@ export default {
             } 
             else
             if(items[0] == 's') {
+                console.log('debug: debug: score: ')
                 var who = 0;
                 if(items[1] == 'v') {
                     who = 1;
                 }
 
                 var val = parseInt(items[2]);
+                console.log('debug: who, val: ' + who.toString() + ', ' + val.toString())
 
                 this.gamedata.score[who][this.gamedata.quarter] = val;
-                console.log("gamedata.score[0]: " + this.gamedata.score[0][0] + ", " + this.gamedata.score[0][1] + ", " + this.gamedata.score[0][2] + ", " + this.gamedata.score[0][3] + ", " + this.gamedata.score[0][4])
-                console.log("gamedata.score[1]: " + this.gamedata.score[1][0] + ", " + this.gamedata.score[1][1] + ", " + this.gamedata.score[1][2] + ", " + this.gamedata.score[1][3] + ", " + this.gamedata.score[0][4])
+                console.log("debug: gamedata.score[0]: " + this.gamedata.score[0][0] + ", " + this.gamedata.score[0][1] + ", " + this.gamedata.score[0][2] + ", " + this.gamedata.score[0][3] + ", " + this.gamedata.score[0][4])
+                console.log("debug: gamedata.score[1]: " + this.gamedata.score[1][0] + ", " + this.gamedata.score[1][1] + ", " + this.gamedata.score[1][2] + ", " + this.gamedata.score[1][3] + ", " + this.gamedata.score[0][4])
 
                 this.gamedata.name[0] = "HOME" + val.toString()
                 this.gamedata.name[1] = "VISITOR" + val.toString()
@@ -68,14 +70,18 @@ export default {
             }
             else
             if(items[0] == 'o') {
-                if(items[1] == 'h') {
-                    this.gamedata.offense = this.gamedata.home;
-                    this.gamedata.defense = this.gamedata.visitor;
+                console.log('debug.offense: ' + items[1]);
+                if(items[1] == 'h' || items[1] == 'h.') {
+                    console.log('debug: offense: home')
+                    this.gamedata.offense = 0;
+                    this.gamedata.defense = 1;
                 }
                 else {
-                    this.gamedata.offense = this.gamedata.visitor;
-                    this.gamedata.defense = this.gamedata.home;                   
+                    console.log('debug: offense: visitor')
+                    this.gamedata.offense = 1;
+                    this.gamedata.defense = 0;                   
                 }
+                this.gamedata.trigger++;
             }
         }
     }
