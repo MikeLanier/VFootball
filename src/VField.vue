@@ -48,12 +48,12 @@ export default {
     this.height = h.toString() + 'px';
     this.border = this.scale.toString() + "px solid white";
 
-    var ticksize = 10;
-    var ticktop = [ 0, 0, 0, 0 ];
-    ticktop[0] = this.imargin;
-    ticktop[1] = h / 3;
-    ticktop[2] = ticktop[1] * 2;
-    ticktop[3] = this.imargin + h - ticksize + 1;
+    var hashsize = 10;
+    var hashtop = [ 0, 0, 0, 0 ];
+    hashtop[0] = this.imargin;
+    hashtop[1] = h / 3;
+    hashtop[2] = hashtop[1] * 2;
+    hashtop[3] = this.imargin + h - hashsize + 1;
 
     // compute x coordinate for visitor goal line.  that's 30 feet (10 yards)
     // times the scale plus the margin
@@ -75,21 +75,61 @@ export default {
       x = x + 30 * this.scale;
     }
 
-    // draw the tick marks
+    // draw the hash marks
     x = this.imargin + 30 * this.scale;
     for(var i=0; i<=100; i++) {
       for(var j=0; j<4; j++) {
-        var yardline = document.createElement('div');
-        yardline.style.borderLeft='medium solid';
-        yardline.style.position='absolute';
-        yardline.style.left = x.toString() + 'px';
-        yardline.style.top = ticktop[j].toString() + 'px';
-        yardline.style.height = ticksize.toString() + "px";
-        yardline.style.border = '1px solid white';
-        field.appendChild(yardline);
+        var hashmark = document.createElement('div');
+        hashmark.style.borderLeft='medium solid';
+        hashmark.style.position='absolute';
+        hashmark.style.left = x.toString() + 'px';
+        hashmark.style.top = hashtop[j].toString() + 'px';
+        hashmark.style.height = hashsize.toString() + "px";
+        hashmark.style.border = '1px solid white';
+        field.appendChild(hashmark);
       }
 
       x = x + 3 * this.scale;
+    }
+
+    var fontSize = this.scale * 75;
+
+    var yardnumbers = [ '', 'G', '1', '0', '2', '0', '3', '0', '4', '0', '5', '0', '4', '0', '3', '0', '2', '0', '1', '0', 'G', '' ];
+    var iboxsize = 15 * this.scale;
+    var boxsize = iboxsize.toString() + 'px';
+    x = this.imargin + 30 * this.scale - iboxsize / 2 + 1;
+
+    for(var i=0; i<22; i+=2)
+    {
+      var yardnumber = document.createElement('div');
+      yardnumber.style.position='absolute';
+      yardnumber.style.left = x.toString() + 'px';
+      yardnumber.style.top = '30px';
+      yardnumber.style.height = boxsize;
+      yardnumber.style.width = boxsize;
+      yardnumber.innerText = yardnumbers[i];
+      yardnumber.style.textAlign = 'left';
+      yardnumber.style.fontSize = fontSize.toString() + '%';
+      yardnumber.style.fontFamily = 'Impact';
+      yardnumber.style.color = 'white';
+      // yardnumber.style.border = '1px solid white';
+      field.appendChild(yardnumber);
+
+      yardnumber = document.createElement('div');
+      yardnumber.style.position='absolute';
+      yardnumber.style.left = x.toString() + 'px';
+      yardnumber.style.top = '30px';
+      yardnumber.style.height = boxsize;
+      yardnumber.style.width = boxsize;
+      yardnumber.innerText = yardnumbers[i+1];
+      yardnumber.style.textAlign = 'right';
+      yardnumber.style.fontSize = fontSize.toString() + '%';
+      yardnumber.style.fontFamily = 'Impact';
+      yardnumber.style.color = 'white';
+      // yardnumber.style.border = '1px solid white';
+      field.appendChild(yardnumber);
+
+      x = x + 30 * this.scale;
     }
 
   } // mounted
