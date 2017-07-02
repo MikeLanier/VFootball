@@ -17,7 +17,9 @@ export default {
     },
     methods: {
         keyup() {
-            if(this.message.indexOf('.') >= 0) {
+            var i = this.message.indexOf('.');
+            if(i >= 0) {
+                this.message = this.message.substr(0,i);
                 this.click();
             }
         },
