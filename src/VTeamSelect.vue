@@ -1,10 +1,6 @@
 <template>
     <div id="mySidenav" class="sidenav">
         <div class="closebtn" @click="closeNav">&times;</div>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
     </div>
 </template>
 
@@ -26,6 +22,9 @@ export default {
             console.log("VTeamSelect:closeNav");
             document.getElementById("mySidenav").style.width = "0";
         }
+    },
+    mounted() {
+        console.log('VTeamSelect:mounted')
     }
 }
 </script>
@@ -33,16 +32,18 @@ export default {
 <style>
 /* The side navigation menu */
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
 /* The navigation menu links */
