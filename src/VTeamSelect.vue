@@ -1,6 +1,7 @@
 <template>
     <div id="mySidenav" class="sidenav">
         <div class="closebtn" @click="closeNav">&times;</div>
+        <!-- <div class="closebtn" @click="readfile">readfile;</div> -->
     </div>
 </template>
 
@@ -10,6 +11,21 @@ export default {
     props: [ 'gamedata' ],
     data() {
         return {
+            sec: 
+            [
+                "#SEC,,,",
+                "Alabama,2012,CSV\2012 Alabama.csv,Alabama.png",
+                "Arkansas,1977,CSV\1977 Arkansas.csv,Arkansas.png",
+                "Auburn,2010,CSV\2010 Auburn.csv,Auburn.png",
+                "Florida,2008,CSV\2008 Florida.csv,Florida.png",
+                "Georgia,1980,CSV\1980 Georgia.csv,Georgia.png",
+                "Kentucky,1977,CSV\1977 Kentucky.csv,Kentucky2.png",
+                "LSU,2007,CSV\2007 LSU.csv,LSU.png",
+                "Mississippi,2003,CSV\2003 Mississippi.csv,Mississippi.png",
+                "Missouri,1969,CSV\1969 Missouri.csv,Missouri.png",
+                "South Carolina,1984,CSV\1984 South Carolina.csv,South_Carolina.png",
+                "Tennessee,1998,CSV\1998 Tennessee.csv,Tennessee.png"
+            ]
         };
     },
     watch: {
@@ -21,10 +37,38 @@ export default {
         closeNav() {
             console.log("VTeamSelect:closeNav");
             document.getElementById("mySidenav").style.width = "0";
+        },
+        readfile() {
+            console.log('\n\nVTeamSelect:readfile');
+            var file = new File([""], "C:\\Mike\\VFootball\\src\\assets\\Teams\\SEC.csv");
+            console.log("file.name: " + file.name);
+            var reader = new FileReader();
+            console.log('VTeamSelect:mounted-2');
+            reader.onload = function(progressEvent) {
+                // Entire file
+                console.log("VTextSelect:mounter:read.onload:this.result: " + this.result);
+
+                // By lines
+                var lines = this.result.split('\n');
+                console.log("VTextSelect:mounter:read.onload:lines: " + lines);
+                for(var line = 0; line < lines.length; line++){
+                    console.log("lines[line]: " + line.toString() + ", " + lines[line]);
+                }
+            };
+
+            try {
+                console.log('VTeamSelect:mounted-3');
+                // reader.readAsText(".\\assets\\teams\\sec.csv");
+                reader.readAsText(file);
+            }
+            catch(e) {
+                console.log("readastext failed")
+            }
+            console.log('VTeamSelect:mounted-4');
         }
     },
     mounted() {
-        console.log('VTeamSelect:mounted')
+        console.log('VTeamSelect:mounted-1');
     }
 }
 </script>
@@ -65,8 +109,8 @@ export default {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    height: 25px;
+    right: 50px;
+    height: 50px;
     background-color: white;
     border: 1px solid blue;
     font-size: 36px;
