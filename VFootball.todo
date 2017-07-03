@@ -44,3 +44,8 @@ VFootball:
     ☐ ui for selecting Teams
       ☐ team name
       ☐ team name with helmet
+  TeamSelect:
+    ✔ slideout panel open when click the home or visitor name on the Scoreboard @done (7/2/2017, 8:23:27 PM)
+    ☐ slideout panel closes when a team is selected
+    ☐ read the list of teams
+    ☐ display the teams in a list control

@@ -12,7 +12,7 @@
             <th class="item-header black-border white-background">TO</th>
         </tr>
         <tr>
-            <th :style="{'background-color': homebackground}" class="name black-border white-background">{{gamedata.name[0]}}</th>
+            <th @click="hometeamselect" :style="{'background-color': homebackground}" class="name black-border white-background">{{gamedata.name[0]}}</th>
             <th class="item black-border white-background">{{gamedata.score[0][0]}}</th>
             <th class="item black-border white-background">{{gamedata.score[0][1]}}</th>
             <th class="item black-border white-background">{{gamedata.score[0][2]}}</th>
@@ -23,7 +23,7 @@
             <th class="item black-border white-background">{{gamedata.to[0]}}</th>
         </tr>
         <tr>
-            <th :style="{'background-color': visitorbackground}"class="name black-border white-background">{{gamedata.name[1]}}</th>
+            <th @click="visitorteamselect" :style="{'background-color': visitorbackground}"class="name black-border white-background">{{gamedata.name[1]}}</th>
             <th class="item black-border white-background">{{gamedata.score[1][0]}}</th>
             <th class="item black-border white-background">{{gamedata.score[1][1]}}</th>
             <th class="item black-border white-background">{{gamedata.score[1][2]}}</th>
@@ -160,6 +160,14 @@ export default {
 
                 this.ballon = "at the " + this.gamedata.name[team] + " " + yardline.toString() + " yardline";
             }
+        },
+        hometeamselect() {
+            console.log("scoreboard:hometeamselect");
+            document.getElementById("mySidenav").style.width = "250px";
+        },
+        visitorteamselect() {
+            console.log("scoreboard:visitorteamselect");
+            document.getElementById("mySidenav").style.width = "250px";
         }
     }
 }

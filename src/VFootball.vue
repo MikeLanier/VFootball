@@ -6,6 +6,7 @@
     <div class="options black-border"><v-options :gamedata="gamedata"></v-options></div>
     <div class="stats black-border"><v-stats :gamedata="gamedata"></v-stats></div>
     <div class="debug black-border"><v-debug :gamedata="gamedata"></v-debug></div>
+    <v-team-select></v-team-select>
   </div>
 </template>
 
@@ -17,10 +18,11 @@ import VOptions from "./VOptions.vue"
 import VStats from "./VStats.vue"
 import VDebug from "./VDebug.vue"
 import JTeam from "./JTeam.js"
+import VTeamSelect from "./VTeamSelect.vue"
 
 export default {
   name: 'v-football',
-  components: { VScoreboard, VField, VText, VOptions, VStats, VDebug },
+  components: { VScoreboard, VField, VText, VOptions, VStats, VDebug, VTeamSelect },
 
   data() {
     return {
