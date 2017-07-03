@@ -1,42 +1,42 @@
 <template>
     <div id="mySidenav" class="sidenav">
         <div class="closebtn" @click="closeNav">&times;</div>
+
         <ul id="example-1">
-            <li v-for="item in sec" :key="item.id">
-                <div @click="toggle">
-                    {{ item.team }}
-                </div>
+            <li v-for="item in sec" :key="item.id" style="list-style: none">
+				<v-team-select-item :team="item">
+				</v-team-select-item>					
             </li>
         </ul>
     </div>
 </template>
 
 <script>
+import VTeamSelectItem from "./VTeamSelectItem.vue"
 export default {
     name: "VTeamSelect",
     props: [ 'gamedata' ],
+    components: { VTeamSelectItem },
     data() {
         return {
             sec: [
-                { team: "#SEC,,," },
-                    { team: "Alabama,2012,CSV\\2012 Alabama.csv,Alabama.png" },
-                    { team: "Arkansas,1977,CSV\\1977 Arkansas.csv,Arkansas.png" },
-                    { team: "Auburn,2010,CSV\\2010 Auburn.csv,Auburn.png" },
-                    { team: "Florida,2008,CSV\\2008 Florida.csv,Florida.png" },
-                    { team: "Georgia,1980,CSV\\1980 Georgia.csv,Georgia.png" },
-                    { team: "Kentucky,1977,CSV\\1977 Kentucky.csv,Kentucky2.png" },
-                    { team: "LSU,2007,CSV\\2007 LSU.csv,LSU.png" },
-                    { team: "Mississippi,2003,CSV\\2003 Mississippi.csv,Mississippi.png" },
-                    { team: "Missouri,1969,CSV\\1969 Missouri.csv,Missouri.png" },
-                    { team: "South Carolina,1984,CSV\\1984 South Carolina.csv,South_Carolina.png" }
+                // { name: "#SEC,,," },
+				{ name: "Alabama", year: "2012", filenamme: "CSV\\2012 Alabama.csv", helmet: "Alabama.png" },
+				{ name: "Arkansas", year: "1977", filenamme: "CSV\\1977 Arkansas.csv", helmet: "Arkansas.png" },
+				{ name: "Auburn", year: "2010", filenamme: "CSV\\2010 Auburn.csv", helmet: "Auburn.png" },
+				{ name: "Florida", year: "2008", filenamme: "CSV\\2008 Florida.csv", helmet: "Florida.png" },
+				{ name: "Georgia", year: "1980", filenamme: "CSV\\1980 Georgia.csv", helmet: "Georgia.png" },
+				{ name: "Kentucky", year: "1977", filenamme: "CSV\\1977 Kentucky.csv", helmet: "Kentucky2.png" },
+				{ name: "LSU", year: "2007", filenamme: "CSV\\2007 LSU.csv", helmet: "LSU.png" },
+				{ name: "Mississippi", year: "2003", filenamme: "CSV\\2003 Mississippi.csv", helmet: "Mississippi.png" },
+				{ name: "Missouri", year: "1969", filenamme: "CSV\\1969 Missouri.csv", helmet: "Missouri.png" },
+				{ name: "South Carolina", year: "1984", filenamme: "CSV\\1984 South Carolina.csv", helmet: "South_Carolina.png" }
            ]
         }
     },
     watch: {
     },
     methods: {
-        toggle() {
-        },
         openNav() {
             document.getElementById("mySidenav").style.width = "250px";
         },
@@ -91,8 +91,9 @@ export default {
     background-color: white;
     border: 1px solid black;
     border-radius: 5px;
-    overflow-x: hidden;
-    padding-top: 60px;
+    overflow: scroll;
+	white-space: nowrap;
+    /*padding-top: 60px;*/
     transition: 0.5s;
 }
 
