@@ -209,15 +209,39 @@ export default {
     },
     'gamedata.yardline': function() {
       console.log('field: gamedata.yardline: ' + this.gamedata.yardline)
-      var x = this.imargin + 30 * this.scale;
-      x = x + (100 - this.gamedata.yardline) * this.scale * 3;
-      this.linetomake.style.left = x.toString() + 'px';
+      this.set_lineofscrimmage();
+      this.set_linetomake();
     },
     'gamedata.offense': function() {
-        console.log('field: gamedata.offense: ' + this.gamedata.offense)
+      console.log('field: gamedata.offense: ' + this.gamedata.offense)
+      this.set_lineofscrimmage();
+      this.set_linetomake();
     },
     'gamedata.defense': function() {
         console.log('field: gamedata.defense: ' + this.gamedata.defense)
+    }
+  },
+  methods: {
+    set_lineofscrimmage() {
+      var x = this.imargin + 30 * this.scale;
+      if(this.gamedata.offense == 0) {
+        x = x + (100 - this.gamedata.yardline) * this.scale * 3;
+      }
+      else {
+        x = x + (this.gamedata.yardline) * this.scale * 3;
+      }
+      this.lineofscrimmage.style.left = x.toString() + 'px';
+    },
+    set_linetomake() {
+      var linetomake = this.gamedata.yardline - this.gamedata.togo;
+      var x = this.imargin + 30 * this.scale;
+      if(this.gamedata.offense == 0) {
+        x = x + (100 - linetomake) * this.scale * 3;
+      }
+      else {
+        x = x + (linetomake) * this.scale * 3;
+      }
+      this.linetomake.style.left = x.toString() + 'px';
     }
   }
 }

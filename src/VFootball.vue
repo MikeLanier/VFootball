@@ -34,7 +34,7 @@ export default {
         ],
         quarter: 1,
         down: 1,
-        yardline: 60,
+        yardline: 0,
         togo: 10,
         time: 900,
         to: [ 3, 3 ],

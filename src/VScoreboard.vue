@@ -53,39 +53,39 @@ export default {
     },
     watch: {
         'gamedata.trigger': function() {
-            console.log('scoreboard: trigger');
+            // console.log('scoreboard: trigger');
             this.format_names();
         },
         'gamedata.down': function() {
-            console.log('scoreboard: gamedata.down');
+            // console.log('scoreboard: gamedata.down');
             this.format_down();
         },
         'gamedata.togo': function() {
-            console.log('scoreboard: gamedata.togo: ')
-            console.log('scoreboard: gamedata.down');
+            // console.log('scoreboard: gamedata.togo: ')
+            // console.log('scoreboard: gamedata.down');
             this.format_down();
         },
         'gamedata.yardline': function() {
-            console.log('scoreboard: gamedata.yardline: ' + this.gamedata.yardline)
+            // console.log('scoreboard: gamedata.yardline: ' + this.gamedata.yardline)
             this.format_ballon();
         },
         'gamedata.offense': function() {
-            console.log('scoreboard: gamedata.offense: ' + this.gamedata.offense)
+            // console.log('scoreboard: gamedata.offense: ' + this.gamedata.offense)
             this.format_ballon();
             this.format_names();
         },
         'gamedata.defense': function() {
-            console.log('scoreboard: gamedata.defense: ' + this.gamedata.defense)
+            // console.log('scoreboard: gamedata.defense: ' + this.gamedata.defense)
         },
         'gamedata.quarter': function() {
-            console.log('scoreboard: gamedata.quarter: ' + this.gamedata.quarter)
+            // console.log('scoreboard: gamedata.quarter: ' + this.gamedata.quarter)
             this.quarter1background = (this.gamedata.quarter == 1) ? 'yellow' : 'white';
             this.quarter2background = (this.gamedata.quarter == 2) ? 'yellow' : 'white';
             this.quarter3background = (this.gamedata.quarter == 3) ? 'yellow' : 'white';
             this.quarter4background = (this.gamedata.quarter == 4) ? 'yellow' : 'white';
         },
         'gamedata.time': function() {
-            console.log('scoreboard: gamedata.time: ' + this.gamedata.time);
+            // console.log('scoreboard: gamedata.time: ' + this.gamedata.time);
             var min = Math.floor(this.gamedata.time / 60);
             var sec = this.gamedata.time - (min * 60);
             console.log("   min, sec: " + min.toString() + ", " + sec.toString())
@@ -122,9 +122,9 @@ export default {
             }
         },
         format_down() {
-            console.log('scoreboard: format_down')
-            console.log('scoreboard: gamedata.down: ' + this.gamedata.down)
-            console.log('scoreboard: gamedata.togo: ' + this.gamedata.togo)
+            // console.log('scoreboard: format_down')
+            // console.log('scoreboard: gamedata.down: ' + this.gamedata.down)
+            // console.log('scoreboard: gamedata.togo: ' + this.gamedata.togo)
 
             if(this.gamedata.down == 1) { this.down = '1st and ' }
             else if(this.gamedata.down == 2)    {this.down = '2nd and '}
@@ -135,25 +135,25 @@ export default {
             this.down = this.down + this.gamedata.togo.toString(); 
         },
         format_ballon() {
-            console.log('scoreboard: format_ballon')
-            console.log("  yardline: " + this.gamedata.yardline)
-            console.log("  offense: " + this.gamedata.offense)
+            // console.log('scoreboard: format_ballon')
+            // console.log("  yardline: " + this.gamedata.yardline)
+            // console.log("  offense: " + this.gamedata.offense)
             var ballon = 'ball ';
             if(this.gamedata.yardline == 50) {
                 ballon = ballon + 'at midfield'
             }
             else {
-                console.log('scoreboard: yardline: ' + this.gamedata.yardline)
+                // console.log('scoreboard: yardline: ' + this.gamedata.yardline)
                 var yardline = 0;
                 var team = 0;
 
                 if(this.gamedata.yardline > 50) {
-                    console.log('>50')
+                    // console.log('>50')
                     yardline = 100 - this.gamedata.yardline;
                     team = this.gamedata.offense;
                 }
                 else {
-                    console.log('<50')
+                    // console.log('<50')
                     yardline = this.gamedata.yardline;
                     team = this.gamedata.defense;
                 }

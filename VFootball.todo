@@ -27,7 +27,11 @@ VFootball:
     ☐ update to on to change
     ✔ update score heading on quarter change @done (7/1/2017, 12:59:19 PM)
   Field Panel:
-    ☐ draw the basic field
+    ✔ draw the basic field @done (7/2/2017, 7:38:26 AM)
+    ✔ update line of scrimmage @done (7/2/2017, 7:38:27 AM)
+    ☐ update line to make
+    ☐ update ball marker
+    ☐ drives
   Text Panel:
     ☐ display text in a scrolling window
     ☐ multicolor text
