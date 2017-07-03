@@ -1,7 +1,11 @@
 <template>
     <div id="mySidenav" class="sidenav">
         <div class="closebtn" @click="closeNav">&times;</div>
-        <!-- <div class="closebtn" @click="readfile">readfile;</div> -->
+        <ul id="example-1">
+            <li v-for="item in sec" :key="item.id">
+                {{ item.team }}
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -11,22 +15,20 @@ export default {
     props: [ 'gamedata' ],
     data() {
         return {
-            sec: 
-            [
-                "#SEC,,,",
-                "Alabama,2012,CSV\2012 Alabama.csv,Alabama.png",
-                "Arkansas,1977,CSV\1977 Arkansas.csv,Arkansas.png",
-                "Auburn,2010,CSV\2010 Auburn.csv,Auburn.png",
-                "Florida,2008,CSV\2008 Florida.csv,Florida.png",
-                "Georgia,1980,CSV\1980 Georgia.csv,Georgia.png",
-                "Kentucky,1977,CSV\1977 Kentucky.csv,Kentucky2.png",
-                "LSU,2007,CSV\2007 LSU.csv,LSU.png",
-                "Mississippi,2003,CSV\2003 Mississippi.csv,Mississippi.png",
-                "Missouri,1969,CSV\1969 Missouri.csv,Missouri.png",
-                "South Carolina,1984,CSV\1984 South Carolina.csv,South_Carolina.png",
-                "Tennessee,1998,CSV\1998 Tennessee.csv,Tennessee.png"
+            sec: [
+                { team: "#SEC,,," },
+                { team: "Alabama,2012,CSV\\2012 Alabama.csv,Alabama.png" },
+                { team: "Arkansas,1977,CSV\\1977 Arkansas.csv,Arkansas.png" },
+                { team: "Auburn,2010,CSV\\2010 Auburn.csv,Auburn.png" },
+                { team: "Florida,2008,CSV\\2008 Florida.csv,Florida.png" },
+                { team: "Georgia,1980,CSV\\1980 Georgia.csv,Georgia.png" },
+                { team: "Kentucky,1977,CSV\\1977 Kentucky.csv,Kentucky2.png" },
+                { team: "LSU,2007,CSV\\2007 LSU.csv,LSU.png" },
+                { team: "Mississippi,2003,CSV\\2003 Mississippi.csv,Mississippi.png" },
+                { team: "Missouri,1969,CSV\\1969 Missouri.csv,Missouri.png" },
+                { team: "South Carolina,1984,CSV\\1984 South Carolina.csv,South_Carolina.png" },
             ]
-        };
+        }
     },
     watch: {
     },

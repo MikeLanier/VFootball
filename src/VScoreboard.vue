@@ -163,11 +163,11 @@ export default {
         },
         hometeamselect() {
             console.log("scoreboard:hometeamselect");
-            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("mySidenav").style.width = "400px";
         },
         visitorteamselect() {
             console.log("scoreboard:visitorteamselect");
-            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("mySidenav").style.width = "400px";
         }
     }
 }
