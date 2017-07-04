@@ -1,6 +1,6 @@
 export var Army_1945 = {
 	name: 'Army_1945',
-	teams: [
+	stuff: [
 		"1945,Army,Cadets,27,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,1,DS,2,B,2,INC,QR,QR,F+T1,T2,22,2,10,,,",

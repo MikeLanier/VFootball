@@ -1,6 +1,6 @@
 export var Arkansas_1977 = {
 	name: 'Arkansas_1977',
-	teams: [
+	stuff: [
 		"1977,Arkansas,Razorbacks,26,4264141,16777215,c:\Mike\Football\Helmets\Arkansas.bmp,ARK,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,11,DEF 15,-1,DEF 5,DEF 5,DEF 5,DEF 5,DEF 5,OFF 5,57,25,-15,10,",

@@ -1,6 +1,6 @@
 export var Brigham_Young_1984 = {
 	name: 'Brigham_Young_1984',
-	teams: [
+	stuff: [
 		"1984,Brigham Young,Cougars,28,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,9,4,1,DS,3,33,DS,13,PI T1,T2,T1,F+DS,10,,,",

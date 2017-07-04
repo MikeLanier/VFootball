@@ -1,6 +1,6 @@
 export var Georgia_Tech_1990 = {
 	name: 'Georgia_Tech_1990',
-	teams: [
+	stuff: [
 		"1990,Georgia Tech,Yellow Jackets,29,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,5,9,6,2,DEF R,50,F+DS,INT X,INT T1,14,F-1,X,10,,,",

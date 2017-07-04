@@ -1,6 +1,6 @@
 export var Mississippi_2003 = {
 	name: 'Mississippi_2003',
-	teams: [
+	stuff: [
 		"2003,Mississippi,Rebels,29,9513984,2883839,c:\Mike\Football\Helmets\Mississippi.bmp,MSP,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,8,8,-3,3,-3,24,PI X,-15,F 23,61,-4,-7,10,",

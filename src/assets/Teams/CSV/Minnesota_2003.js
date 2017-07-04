@@ -1,6 +1,6 @@
 export var Minnesota_2003 = {
 	name: 'Minnesota_2003',
-	teams: [
+	stuff: [
 		"2003,Minnesota,Gophers,28,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,2,B,DEF R,5,1,T2,15,PI X,T1,22,24,F-DS,10,,,",

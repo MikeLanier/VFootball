@@ -1,6 +1,6 @@
 export var Missouri_1969 = {
 	name: 'Missouri_1969',
-	teams: [
+	stuff: [
 		"1969,Missouri,Tigers,27,0,1159144,c:\Mike\Football\Helmets\Missouri.bmp,MIZ,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,-1,DEF S,,4,DS,DS,DEF S,QR,QR,T1,-2,-DS,10,",

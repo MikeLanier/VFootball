@@ -1,6 +1,6 @@
 export var Georgia_1980 = {
 	name: 'Georgia_1980',
-	teams: [
+	stuff: [
 		"1980,Georgia,Bulldogs,32,721056,0,c:\Mike\Football\Helmets\Georgia.bmp,UGA,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,6,1,B,7,(0),OFF S,T1,,TD,T2,-DS,X,10,",

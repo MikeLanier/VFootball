@@ -1,6 +1,6 @@
 export var Texas_Christian_2000 = {
 	name: 'Texas_Christian_2000',
-	teams: [
+	stuff: [
 		"2000,Texas Christian,Horned Frogs,31,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,(T1),(T1),,2,(QR),QT,OFF S,INC,INC,14,DS,F-DS,10,,,",

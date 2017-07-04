@@ -1,6 +1,6 @@
 export var Navy_2004 = {
 	name: 'Navy_2004',
-	teams: [
+	stuff: [
 		"2004,Navy,Midshipmen,29,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,1,F-1,B,F+3,4,DEF S,QR,QR,61,21,DS,12,10,,,",

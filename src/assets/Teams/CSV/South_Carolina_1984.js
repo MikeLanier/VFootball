@@ -1,6 +1,6 @@
 export var South_Carolina_1984 = {
 	name: 'South_Carolina_1984',
-	teams: [
+	stuff: [
 		"1984,South Carolina,Gamecocks,30,205,0,c:\Mike\Football\Helmets\South Carolina.bmp,USC,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,OFF S,4,14,18,-DS,QT,QR,INT DS,44,T1,F X,F -DS,10,",

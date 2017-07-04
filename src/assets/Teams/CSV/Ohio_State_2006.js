@@ -1,6 +1,6 @@
 export var Ohio_State_2006 = {
 	name: 'Ohio_State_2006',
-	teams: [
+	stuff: [
 		"2006,Ohio State,Buckeyes,25,,,,,,,,,,,,,",
 		"#,Line Plunge,Counter,End Reverse,Draw,Option,Screen,Sprint Out,Boot-leg,Drop Back,QT,QR,B,#,,,",
 		"10,B,11,-2,13,5,INT-1,36,3,29,24,27,42,10,,,",

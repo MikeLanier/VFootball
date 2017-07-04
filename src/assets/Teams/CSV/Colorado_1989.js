@@ -1,6 +1,6 @@
 export var Colorado_1989 = {
 	name: 'Colorado_1989',
-	teams: [
+	stuff: [
 		"1989,Colorado,Buffaloes,33,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,B,7,3,B,OFF R,DS,INT DS,INT X,OFF R,TD,DS,T1*,10,,,",

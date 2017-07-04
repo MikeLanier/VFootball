@@ -1,6 +1,6 @@
 export var Clemson_1981 = {
 	name: 'Clemson_1981',
-	teams: [
+	stuff: [
 		"1981,Clemson,Tigers,30,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,,,,5,,DEF S,PI DS,PI X,OFF R,T1,1,11,10,,,",

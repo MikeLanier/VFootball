@@ -1,6 +1,6 @@
 export var Houston_1979 = {
 	name: 'Houston_1979',
-	teams: [
+	stuff: [
 		"1979,Houston,Cougars,30,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,3,4,DS,DS,DS,T1,8,X,39,F+T1,,15,10,,,",

@@ -1,6 +1,6 @@
 export var Boise_State_2009 = {
 	name: 'Boise_State_2009',
-	teams: [
+	stuff: [
 		"2009,Boise State,Mustangs,29,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,6,3,DS,6,B,7,13,X,(T2),42,8,2,10,,,",

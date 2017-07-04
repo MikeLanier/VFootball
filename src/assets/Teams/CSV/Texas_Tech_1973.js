@@ -1,6 +1,6 @@
 export var Texas_Tech_1973 = {
 	name: 'Texas_Tech_1973',
-	teams: [
+	stuff: [
 		"1973,Texas Tech,Red Raiders,31,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,2,OFF R,,DEF S,F-3,22,5,23,18,11,T1,,10,,,",

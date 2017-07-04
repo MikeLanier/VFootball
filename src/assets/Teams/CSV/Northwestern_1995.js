@@ -1,6 +1,6 @@
 export var Northwestern_1995 = {
 	name: 'Northwestern_1995',
-	teams: [
+	stuff: [
 		"1995,Northwestern,Wildcats,29,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,DEF R,OFF S,B,1,F+B,38,PI DS,PI X,PI T1,12,1,1,10,,,",

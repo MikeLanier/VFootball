@@ -1,6 +1,6 @@
 export var Wyoming_1967 = {
 	name: 'Wyoming_1967',
-	teams: [
+	stuff: [
 		"1967,Wyoming,Cowboys,28,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,3,,DS,B,2,X,DS,OFF R,PI X,24,DS,F-DS,10,,,",

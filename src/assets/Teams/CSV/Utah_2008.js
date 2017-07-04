@@ -1,6 +1,6 @@
 export var Utah_2008 = {
 	name: 'Utah_2008',
-	teams: [
+	stuff: [
 		"2008,Utah,Utes,32,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,4,7,4,2,(O),(T1),QT,QT,-21,20,6,15,10,,,",

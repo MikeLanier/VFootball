@@ -1,6 +1,6 @@
 export var Miami_1987 = {
 	name: 'Miami_1987',
-	teams: [
+	stuff: [
 		"1987,Miami,Hurricanes,33,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,8,9,5,4,F-DS,2,(DS),(DS),DEF 15,T2,5,DS,10,,,",

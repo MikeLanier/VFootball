@@ -1,6 +1,6 @@
 export var Army_2006 = {
 	name: 'Army_2006',
-	teams: [
+	stuff: [
 		"2006,Army,Black Knights,28,,,,,,,,,,,,,",
 		"#,Line Plunge,Counter,End Reverse,Draw,Option,Screen,Sprint Out,Boot-leg,Drop Back,QT,QR,B,#,,,",
 		"10,-1,-3,10,15,6,30,B,17,24,-12,14,43,10,,,",

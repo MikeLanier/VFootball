@@ -1,6 +1,6 @@
 export var UCLA_1988 = {
 	name: 'UCLA_1988',
-	teams: [
+	stuff: [
 		"1988,UCLA,Bruins,28,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,9,8,B,B,4,F-DS,PI X,QT,PI T1,15,T1,F-X,10,,,",

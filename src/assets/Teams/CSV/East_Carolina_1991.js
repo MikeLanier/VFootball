@@ -1,6 +1,6 @@
 export var East_Carolina_1991 = {
 	name: 'East_Carolina_1991',
-	teams: [
+	stuff: [
 		"1991,East Carolina,Pirates,32,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,OFF 10,OFF 15,OFF S,OFF 10,OFF R,OFF R,OFF R,TD,14,T1,DS,DS,10,,,",

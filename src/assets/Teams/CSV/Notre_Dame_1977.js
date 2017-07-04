@@ -1,6 +1,6 @@
 export var Notre_Dame_1977 = {
 	name: 'Notre_Dame_1977',
-	teams: [
+	stuff: [
 		"1977,Notre Dame,Fighting Irish,26,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,9,1,7,3,DEF R,29,DS,X,22,37,2,F-DS,10,,,",

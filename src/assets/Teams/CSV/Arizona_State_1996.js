@@ -1,6 +1,6 @@
 export var Arizona_State_1996 = {
 	name: 'Arizona_State_1996',
-	teams: [
+	stuff: [
 		"1996,Arizona State,Sun Devils,33,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,,,1,6,(O),TD,X,PI X,50,37,,8,10,,,",

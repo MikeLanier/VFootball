@@ -1,6 +1,6 @@
 export var North_Carolina_1997 = {
 	name: 'North_Carolina_1997',
-	teams: [
+	stuff: [
 		"1997,North Carolina,Tar Heels,27,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,OFF S,,5,2,3,INC,7,OFF R,T1*,TD,DS,16,10,,,",

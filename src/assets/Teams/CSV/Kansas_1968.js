@@ -1,6 +1,6 @@
 export var Kansas_1968 = {
 	name: 'Kansas_1968',
-	teams: [
+	stuff: [
 		"1968,Kansas,Jayhawks,30,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,2,6,3,5,3,OFF R,OFF R,QR,OFF S,TD,F+DS,B,10,,,",

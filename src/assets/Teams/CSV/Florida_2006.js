@@ -1,6 +1,6 @@
 export var Florida_2006 = {
 	name: 'Florida_2006',
-	teams: [
+	stuff: [
 		"2006,Florida,Gators,32,13515041,541439,c:\Mike\Football\Helmets\Florida.bmp,FLA,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,17,11,B,9,11,17,39,28,TD,51,22,-18,10,",

@@ -1,6 +1,6 @@
 export var Virginia_Tech_1999 = {
 	name: 'Virginia_Tech_1999',
-	teams: [
+	stuff: [
 		"1999,Virginia Tech,Hokies,30,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,9,B,4,6,3,35,T1,10,T2*,13,DS,15,10,,,",

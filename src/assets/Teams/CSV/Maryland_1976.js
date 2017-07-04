@@ -1,6 +1,6 @@
 export var Maryland_1976 = {
 	name: 'Maryland_1976',
-	teams: [
+	stuff: [
 		"1976,Maryland,Terrapins,26,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,3,8,8,-5,(DS),T1,T1,QR,OFF S,T1,F-DS,F-DS,10,,,",

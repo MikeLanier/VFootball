@@ -1,6 +1,6 @@
 export var Pittsburgh_1976 = {
 	name: 'Pittsburgh_1976',
-	teams: [
+	stuff: [
 		"1976,Pittsburgh,Panthers,30,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,16,B,DEF R,-1,F-DS,OFF R,21,9,37,19,F+X,X,10,,,",

@@ -1,6 +1,6 @@
 export var Ohio_State_1973 = {
 	name: 'Ohio_State_1973',
-	teams: [
+	stuff: [
 		"1973,Ohio State,Buckeyes,31,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,,(O),,(O),OFF R,QT,QR,QR,T1,12,F+DS,X,10,,,",

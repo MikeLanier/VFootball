@@ -1,6 +1,6 @@
 export var Nebraska_1983 = {
 	name: 'Nebraska_1983',
-	teams: [
+	stuff: [
 		"1983,Nebraska,Cornhuskers,33,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,6,11,3,3,3,26,F+X,PI X,F+T1,TD,41,DS,10,,,",

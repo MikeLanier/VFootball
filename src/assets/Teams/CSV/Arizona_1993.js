@@ -1,6 +1,6 @@
 export var Arizona_1993 = {
 	name: 'Arizona_1993',
-	teams: [
+	stuff: [
 		"1993,Arizona,Wildcats,27,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,2,3,6,2,-4,OFF R,7,INC,INC,35,2,3,10,,,",

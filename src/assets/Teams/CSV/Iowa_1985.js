@@ -1,6 +1,6 @@
 export var Iowa_1985 = {
 	name: 'Iowa_1985',
-	teams: [
+	stuff: [
 		"1985,Iowa,Hawkeyes,29,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,X,4,DS,5,3,DS,15,OFF 10,F+T1,T1,3,F-X,10,,,",

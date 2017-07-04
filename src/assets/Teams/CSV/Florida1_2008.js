@@ -1,6 +1,6 @@
 export var Florida1_2008 = {
 	name: 'Florida1_2008',
-	teams: [
+	stuff: [
 		"2008,Florida,Gators,32,,,,,,,,,,,,,",
 		"#,Line Plunge,Counter,End Reverse,Draw,Option,Screen,Sprint Out,Boot-leg,Drop Back,QT,QR,B,#,,,",
 		"10,15,11,-4,19,1,14,23,TD,36,-13,16,TD,10,,,",

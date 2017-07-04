@@ -1,6 +1,6 @@
 export var West_Virginia_1988 = {
 	name: 'West_Virginia_1988',
-	teams: [
+	stuff: [
 		"1988,West Virginia,Mountaineers,29,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,F+DS,F+1,F-DS,,,X,T2,T2,51,25,2,7,10,,,",

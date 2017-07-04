@@ -1,6 +1,6 @@
 export var Michigan_State_1966 = {
 	name: 'Michigan_State_1966',
-	teams: [
+	stuff: [
 		"1966,Michigan State,Spartans,33,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,B,1,8,B,,DS,INC,INC,T1,TD,DS,T1,10,,,",

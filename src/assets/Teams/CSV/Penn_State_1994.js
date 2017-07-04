@@ -1,6 +1,6 @@
 export var Penn_State_1994 = {
 	name: 'Penn_State_1994',
-	teams: [
+	stuff: [
 		"1994,Penn State,Nittany Lions,32,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,B,6,3,4,DS,F+X,INC,INC,F+T1,21,4,4,10,,,",

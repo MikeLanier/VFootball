@@ -1,6 +1,6 @@
 export var Florida_State_1999 = {
 	name: 'Florida_State_1999',
-	teams: [
+	stuff: [
 		"1999,Florida State,Seminoles,33,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,8,B,4,6,B,(T1),T1,12,T1,13,8,13,10,,,",

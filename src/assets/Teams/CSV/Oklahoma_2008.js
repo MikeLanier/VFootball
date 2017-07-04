@@ -1,6 +1,6 @@
 export var Oklahoma_2008 = {
 	name: 'Oklahoma_2008',
-	teams: [
+	stuff: [
 		"2008,Oklahoma,Sooners,35,3408058,16777215,c:\Mike\Football\Helmets\Oklahoma.bmp,OKH,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,15,F ,15,14,13,INT 1,TD,31,24,28,13,7,10,",

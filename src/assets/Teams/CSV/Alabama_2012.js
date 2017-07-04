@@ -1,6 +1,6 @@
 export var Alabama_2012 = {
 	name: 'Alabama_2012',
-	teams: [
+	stuff: [
 		"2012,Alabama,Crimson Tide,29,3278248,16777215,c:\Mike\Football\Helmets\Alabama.bmp,ALA,1,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,-1,B,11,19,5,14,INT 8,B,40,58,-7,2,10,,,",

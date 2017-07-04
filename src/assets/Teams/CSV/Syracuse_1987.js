@@ -1,6 +1,6 @@
 export var Syracuse_1987 = {
 	name: 'Syracuse_1987',
-	teams: [
+	stuff: [
 		"1987,Syracuse,Orangemen,30,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,5,5,4,7,DS,37,T2,T1,51,T1*,,4,10,,,",

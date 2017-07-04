@@ -1,6 +1,6 @@
 export var Oregon_2001 = {
 	name: 'Oregon_2001',
-	teams: [
+	stuff: [
 		"2001,Oregon,Ducks,30,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,X,B,B,DS,1,TD,DS,5,14,T2,DS,F-DS,10,,,",

@@ -1,6 +1,6 @@
 export var North_Carolina_1980 = {
 	name: 'North_Carolina_1980',
-	teams: [
+	stuff: [
 		"1980,North Carolina,Tar Heels,28,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,-2,,19,B,,OFF R,QR,13,DEF S,52,7,15,10,,,",

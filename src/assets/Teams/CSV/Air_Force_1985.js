@@ -1,6 +1,6 @@
 export var Air_Force_1985 = {
 	name: 'Air_Force_1985',
-	teams: [
+	stuff: [
 		"1985,Air Force,Falcons,30,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,OFF R,7,7,B,(O),OFF 15,DEF R,INC,T2,12,4,T1,10,,,",

@@ -1,6 +1,6 @@
 export var Washington_1984 = {
 	name: 'Washington_1984',
-	teams: [
+	stuff: [
 		"1984,Washington,Huskies,29,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,3,,DS,DEF R,OFF R,INC,X,15,T1,TD,F-DS,DS,10,,,",

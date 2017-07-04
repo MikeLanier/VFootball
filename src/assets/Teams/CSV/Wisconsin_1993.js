@@ -1,6 +1,6 @@
 export var Wisconsin_1993 = {
 	name: 'Wisconsin_1993',
-	teams: [
+	stuff: [
 		"1993,Wisconsin,Badgers,29,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,2,4,1,,3,DS,PI 5,PI X,DEF R,T2,F+X,F-DS,10,,,",

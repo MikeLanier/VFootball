@@ -1,6 +1,6 @@
 export var San_Diego_State_1969 = {
 	name: 'San_Diego_State_1969',
-	teams: [
+	stuff: [
 		"1969,San Diego State,Aztecs,27,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,OFF S,6,8,DEF R,BLP,2,OFF R,OFF 10,INT T1,18,9,DS,10,,,",

@@ -1,6 +1,6 @@
 export var Tennessee_1970 = {
 	name: 'Tennessee_1970',
-	teams: [
+	stuff: [
 		"1970,Tennessee,Volunteers,27,2389486,16777215,c:\Mike\Football\Helmets\Tennessee.bmp,TNN,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,6,-1,-4,17,(0),INT ,17,28,41,T1,13,-DS,10,",

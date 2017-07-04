@@ -1,6 +1,6 @@
 export var Baylor_1980 = {
 	name: 'Baylor_1980',
-	teams: [
+	stuff: [
 		"1980,Baylor,Bears,27,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,5,4,F-DS,7,F,F+X,7,6,PI T1,T1,1,DS,10,,,",

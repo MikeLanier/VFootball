@@ -17,6 +17,7 @@ import VTeamSelectItem from "./VTeamSelectItem.vue"
 import {BCS} from "./assets/Teams/BCS.js"
 import {SEC} from "./assets/Teams/SEC.js"
 import {Teams} from "./assets/Teams/Teams.js"
+import {JTeam} from "./JTeam.js";
 
 // import {Air_Force_1985} from "./assets/Teams/CSV/Air Force_1985.js";
 // import {Alabama_1978} from "./assets/Teams/CSV/Alabama_1978.js";
@@ -149,7 +150,8 @@ export default {
     components: { VTeamSelectItem },
     data() {
         return {
-		   junk: SEC
+		   junk: SEC,
+		   team: Alabama_2012
         }
     },
     watch: {
@@ -165,6 +167,8 @@ export default {
 		loadteam(team, options) {
 			this.closeNav();
 			console.log("loadteam: " + team);
+			console.log("this.team.name: " + this.team.name);
+			var team = new JTeam(this.team);
 		}
     },
     mounted() {

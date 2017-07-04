@@ -1,6 +1,6 @@
 export var Auburn_1983 = {
 	name: 'Auburn_1983',
-	teams: [
+	stuff: [
 		"1983,Auburn,Tigers,29,13310,4203031,c:\Mike\Football\Helmets\Auburn.bmp,AU,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,,6,7,DEF S,SOP,X,19,24,T2,16,3,-8,10,",

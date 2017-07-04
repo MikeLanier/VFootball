@@ -1,6 +1,6 @@
 export var SMU_1982 = {
 	name: 'SMU_1982',
-	teams: [
+	stuff: [
 		"1982,SMU,Mustangs,30,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,2,6,DS,5,8,F+X,3,PI DS,TD,13,DS,15,10,,,",

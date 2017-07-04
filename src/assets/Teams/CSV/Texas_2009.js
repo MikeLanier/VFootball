@@ -1,6 +1,6 @@
 export var Texas_2009 = {
 	name: 'Texas_2009',
-	teams: [
+	stuff: [
 		"2009,Texas,Longhorns,27,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,3,2,10,7,QT,-14,T2,(T1),PI T1,12,7,8,10,,,",

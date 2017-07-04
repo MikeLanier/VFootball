@@ -1,6 +1,6 @@
 export var Oklahoma_State_1988 = {
 	name: 'Oklahoma_State_1988',
-	teams: [
+	stuff: [
 		"1988,Oklahoma State,Cowboys,33,26111,0,c:\Mike\Football\Helmets\Oklahoma State.bmp,OSU,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,2,4,B,6,(0),TD,13,8,PI T1,TD,1,-13,10,",

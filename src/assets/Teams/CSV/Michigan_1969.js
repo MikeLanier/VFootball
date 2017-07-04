@@ -1,6 +1,6 @@
 export var Michigan_1969 = {
 	name: 'Michigan_1969',
-	teams: [
+	stuff: [
 		"1969,Michigan,Wolverines,31,,,,,,,,,,,,,",
 		"#,Line Plunge,Counter,End + Reverse,Draw,Option,Screen,Sprint Out,Bootleg,Drop Back,B,QR,QT,#,,,",
 		"10,DEF 15,B,F -5,DEF 15,DEF 5,DEF 5,OFF 5,OFF 5,DEF 5,42,19,5,10,,,",

@@ -1,6 +1,6 @@
 export var USC_1967 = {
 	name: 'USC_1967',
-	teams: [
+	stuff: [
 		"1967,USC,Trojans,28,,,,,,,,,,,,,",
 		"#,Line Plunge,Counter,End Reverse,Draw,Option,Screen,Sprint Out,Boot-leg,Drop Back,QT,QR,B,#,,,",
 		"10,DEF15,18*,5*,OFF5,OFF5,OFF5,OFF15,OFF5,48,1,17,37,10,,,",

@@ -1,6 +1,6 @@
 export var Michigan_1947 = {
 	name: 'Michigan_1947',
-	teams: [
+	stuff: [
 		"1947,Michigan,Wolverines,27,4268839,1557754,c:\Mike\Football\Helmets\Michigan.bmp,MCH,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,OFF 15,OFF 15,OFF 15,OFF 15,OFF 15,OFF 15,OFF 15,OFF 15,13,24,8,-5,10,",

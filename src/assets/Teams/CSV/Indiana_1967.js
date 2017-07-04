@@ -1,6 +1,6 @@
 export var Indiana_1967 = {
 	name: 'Indiana_1967',
-	teams: [
+	stuff: [
 		"1967,Indiana,Hoosiers,26,,,,,,,,,,,,,",
 		"#,Line Plunge,Counter,End Reverse,Draw,Option,Screen,Sprint Out,Boot-leg,Drop Back,QT,QR,B,#,,,",
 		"10,OFF15,DEF5,OFF5,2,1,11,OFF5,OFF6,41*,2,63,46,10,,,",

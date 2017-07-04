@@ -1,6 +1,6 @@
 export var LSU_1987 = {
 	name: 'LSU_1987',
-	teams: [
+	stuff: [
 		"1987,LSU,Tigers,30,8071475,2603261,c:\Mike\Football\Helmets\LSU.bmp,LSU,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,DS,B,-4,5,2,31,29,PI X,PI X,12,8,-12,10,",

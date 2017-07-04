@@ -1,6 +1,6 @@
 export var Arizona_State_1975 = {
 	name: 'Arizona_State_1975',
-	teams: [
+	stuff: [
 		"1975,Arizona State,Sun Devils,27,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,7,OFF S,15,B,3,DEF R,QR,INC,40,T1,17,13,10,,,",

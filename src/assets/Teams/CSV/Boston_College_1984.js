@@ -1,6 +1,6 @@
 export var Boston_College_1984 = {
 	name: 'Boston_College_1984',
-	teams: [
+	stuff: [
 		"1984,Boston College,Eagles,33,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,1,7,8,2,DEF R,T1,PI DS,14,PI T1,10,T1,13,10,,,",

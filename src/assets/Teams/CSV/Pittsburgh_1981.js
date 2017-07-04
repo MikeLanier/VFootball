@@ -1,6 +1,6 @@
 export var Pittsburgh_1981 = {
 	name: 'Pittsburgh_1981',
-	teams: [
+	stuff: [
 		"1981,Pittsburgh,Panthers,26,,,,,,,,,,,,,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,2,7,1,7,1,(DS),26,(T1),(T2),33,DS,DS,10,,,",

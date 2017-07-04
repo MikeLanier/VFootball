@@ -1,6 +1,6 @@
 export var Maryland_1951 = {
 	name: 'Maryland_1951',
-	teams: [
+	stuff: [
 		"1951,Maryland,Terapins,25,2818261,0,c:\Mike\Football\Helmets\Maryland.bmp,MRY,1,",
 		"# ON DICE,LINE PLUNGE,COUNTER,END + REVERSE         ,DRAW,OPTION,SCREEN,SPRINT- OUT,BOOTLEG,DROP BACK,B,QR,QT,# ON DICE,,,",
 		"10,4,-4,2,6,-7,F 10,F 11,F 10,DEF 15,25,21,-13,10,",
