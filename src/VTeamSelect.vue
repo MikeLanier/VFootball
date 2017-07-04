@@ -16,6 +16,7 @@
 import VTeamSelectItem from "./VTeamSelectItem.vue"
 import {BCS} from "./assets/Teams/BCS.js"
 import {SEC} from "./assets/Teams/SEC.js"
+import {Teams} from "./assets/Teams/Teams.js"
 
 export default {
     name: "VTeamSelect",
@@ -23,7 +24,7 @@ export default {
     components: { VTeamSelectItem },
     data() {
         return {
-		   junk: BCS
+		   junk: Teams
         }
     },
     watch: {
