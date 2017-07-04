@@ -19,15 +19,15 @@ import {SEC} from "./assets/Teams/SEC.js"
 import {Teams} from "./assets/Teams/Teams.js"
 
 // import {Air_Force_1985} from "./assets/Teams/CSV/Air Force_1985.js";
-import {Alabama_1978} from "./assets/Teams/CSV/Alabama_1978.js";
+// import {Alabama_1978} from "./assets/Teams/CSV/Alabama_1978.js";
 // import {Alabama_1979} from "./assets/Teams/CSV/Alabama_1979.js";
 // import {Alabama_1992} from "./assets/Teams/CSV/Alabama_1992.js";
 // import {Alabama_2009} from "./assets/Teams/CSV/Alabama_2009.js";
-// import {Alabama_2012} from "./assets/Teams/CSV/Alabama_2012.js";
+import {Alabama_2012} from "./assets/Teams/CSV/Alabama_2012.js";
 // import {Arizona_State_1975} from "./assets/Teams/CSV/Arizona State_1975.js";
 // import {Arizona_State_1996} from "./assets/Teams/CSV/Arizona State_1996.js";
 // import {Arizona_1993} from "./assets/Teams/CSV/Arizona_1993.js";
-// import {Arkansas_1977} from "./assets/Teams/CSV/Arkansas_1977.js";
+import {Arkansas_1977} from "./assets/Teams/CSV/Arkansas_1977.js";
 // import {Army_1945} from "./assets/Teams/CSV/Army_1945.js";
 // import {Army_1996} from "./assets/Teams/CSV/Army_1996.js";
 // import {Army_2006} from "./assets/Teams/CSV/Army_2006.js";
@@ -35,7 +35,7 @@ import {Alabama_1978} from "./assets/Teams/CSV/Alabama_1978.js";
 // import {Auburn_1983} from "./assets/Teams/CSV/Auburn_1983.js";
 // import {Auburn_1993} from "./assets/Teams/CSV/Auburn_1993.js";
 // import {Auburn_2004} from "./assets/Teams/CSV/Auburn_2004.js";
-// import {Auburn_2010} from "./assets/Teams/CSV/Auburn_2010.js";
+import {Auburn_2010} from "./assets/Teams/CSV/Auburn_2010.js";
 // import {Baylor_1980} from "./assets/Teams/CSV/Baylor_1980.js";
 // import {Boise_State_2009} from "./assets/Teams/CSV/Boise State_2009.js";
 // import {Boston_College_1984} from "./assets/Teams/CSV/Boston College_1984.js";
@@ -48,18 +48,18 @@ import {Alabama_1978} from "./assets/Teams/CSV/Alabama_1978.js";
 // import {Florida1_2008} from "./assets/Teams/CSV/Florida1_2008.js";
 // import {Florida_1996} from "./assets/Teams/CSV/Florida_1996.js";
 // import {Florida_2006} from "./assets/Teams/CSV/Florida_2006.js";
-// import {Florida_2008} from "./assets/Teams/CSV/Florida_2008.js";
+import {Florida_2008} from "./assets/Teams/CSV/Florida_2008.js";
 // import {Georgia_Tech_1990} from "./assets/Teams/CSV/Georgia Tech_1990.js";
-// import {Georgia_1980} from "./assets/Teams/CSV/Georgia_1980.js";
+import {Georgia_1980} from "./assets/Teams/CSV/Georgia_1980.js";
 // import {Houston_1979} from "./assets/Teams/CSV/Houston_1979.js";
 // import {Houston_1989} from "./assets/Teams/CSV/Houston_1989.js";
 // import {Indiana_1967} from "./assets/Teams/CSV/Indiana_1967.js";
 // import {Iowa_1985} from "./assets/Teams/CSV/Iowa_1985.js";
 // import {Kansas_1968} from "./assets/Teams/CSV/Kansas_1968.js";
-// import {Kentucky_1977} from "./assets/Teams/CSV/Kentucky_1977.js";
+import {Kentucky_1977} from "./assets/Teams/CSV/Kentucky_1977.js";
 // import {LSU_1987} from "./assets/Teams/CSV/LSU_1987.js";
 // import {LSU_2003} from "./assets/Teams/CSV/LSU_2003.js";
-// import {LSU_2007} from "./assets/Teams/CSV/LSU_2007.js";
+import {LSU_2007} from "./assets/Teams/CSV/LSU_2007.js";
 // import {Maryland_1951} from "./assets/Teams/CSV/Maryland_1951.js";
 // import {Maryland_1976} from "./assets/Teams/CSV/Maryland_1976.js";
 // import {Miami_1987} from "./assets/Teams/CSV/Miami_1987.js";
@@ -72,8 +72,8 @@ import {Alabama_1978} from "./assets/Teams/CSV/Alabama_1978.js";
 // import {Michigan_1973} from "./assets/Teams/CSV/Michigan_1973.js";
 // import {Michigan_1997} from "./assets/Teams/CSV/Michigan_1997.js";
 // import {Minnesota_2003} from "./assets/Teams/CSV/Minnesota_2003.js";
-// import {Mississippi_2003} from "./assets/Teams/CSV/Mississippi_2003.js";
-// import {Missouri_1969} from "./assets/Teams/CSV/Missouri_1969.js";
+import {Mississippi_2003} from "./assets/Teams/CSV/Mississippi_2003.js";
+import {Missouri_1969} from "./assets/Teams/CSV/Missouri_1969.js";
 // import {Navy_1963} from "./assets/Teams/CSV/Navy_1963.js";
 // import {Navy_2004} from "./assets/Teams/CSV/Navy_2004.js";
 // import {Navy_2006} from "./assets/Teams/CSV/Navy_2006.js";
@@ -114,7 +114,7 @@ import {Alabama_1978} from "./assets/Teams/CSV/Alabama_1978.js";
 // import {Pittsburgh_1981} from "./assets/Teams/CSV/Pittsburgh_1981.js";
 // import {San_Diego_State_1969} from "./assets/Teams/CSV/San Diego State_1969.js";
 // import {SMU_1982} from "./assets/Teams/CSV/SMU_1982.js";
-// import {South_Carolina_1984} from "./assets/Teams/CSV/South Carolina_1984.js";
+import {South_Carolina_1984} from "./assets/Teams/CSV/South_Carolina_1984.js";
 // import {Syracuse_1987} from "./assets/Teams/CSV/Syracuse_1987.js";
 // import {Tennessee_1951} from "./assets/Teams/CSV/Tennessee_1951.js";
 // import {Tennessee_1970} from "./assets/Teams/CSV/Tennessee_1970.js";
@@ -149,7 +149,7 @@ export default {
     components: { VTeamSelectItem },
     data() {
         return {
-		   junk: Teams
+		   junk: SEC
         }
     },
     watch: {
