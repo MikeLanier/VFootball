@@ -1,0 +1,33 @@
+export var BCS = {
+	name:  'BCS',
+	teams: [
+		{ name: "#BCS", year: "", filename:  "", helmet: "" },
+		{ name: "Tennessee", year: "1996", filename:  "CSV/1996 Tennessee.csv", helmet: "Tennessee.png" },
+		{ name: "Florida State", year: "1999", filename:  "CSV/1999 Florida State.csv", helmet: "Florida_St.png" },
+		{ name: "Virginia Tech", year: "1999", filename:  "CSV/1999 Virginia Tech.csv", helmet: "Virginia_Tech.png" },
+		{ name: "Oklahoma", year: "2000", filename:  "CSV/2000 Oklahoma.csv", helmet: "Oklahoma.png" },
+		{ name: "Miami", year: "2001", filename:  "CSV/2001 Miami.csv", helmet: "Miami_FL.png" },
+		{ name: "%Miami", year: "2002", filename:  "CSV/2002 Miami.csv", helmet: "Miami_FL.png" },
+		{ name: "Ohio State", year: "2002", filename:  "CSV/2002 Ohio State.csv", helmet: "Ohio_St.png" },
+		{ name: "%Ohio State", year: "2002", filename:  "CSV/2002 Ohio State1.csv", helmet: "Ohio_St.png" },
+		{ name: "%LSU", year: "2003", filename:  "CSV/2003 LSU.csv", helmet: "LSU.png" },
+		{ name: "%Oklahoma", year: "2004", filename:  "CSV/2004 Oklahoma.csv", helmet: "Oklahoma.png" },
+		{ name: "USC", year: "2004", filename:  "CSV/2004 USC.csv", helmet: "Southern_California.png" },
+		{ name: "%USC", year: "2004", filename:  "CSV/2004 USC1.csv", helmet: "Southern_California.png" },
+		{ name: "Texas", year: "2005", filename:  "CSV/2005 Texas.csv", helmet: "Texas.png" },
+		{ name: "%USC", year: "2005", filename:  "CSV/2005 USC.csv", helmet: "Southern_California.png" },
+		{ name: "%Florida", year: "2006", filename:  "CSV/2006 Florida.csv", helmet: "Florida.png" },
+		{ name: "%Ohio State", year: "2006", filename:  "CSV/2006 Ohio State.csv", helmet: "Ohio_St.png" },
+		{ name: "LSU", year: "2007", filename:  "CSV/2007 LSU.csv", helmet: "LSU.png" },
+		{ name: "%Ohio State", year: "2007", filename:  "CSV/2007 Ohio State.csv", helmet: "Ohio_St.png" },
+		{ name: "Florida", year: "2008", filename:  "CSV/2008 Florida.csv", helmet: "Florida.png" },
+		{ name: "%Florida", year: "2008", filename:  "CSV/2008 Florida1.csv", helmet: "Florida.png" },
+		{ name: "%Oklahoma", year: "2008", filename:  "CSV/2008 Oklahoma.csv", helmet: "Oklahoma.png" },
+		{ name: "%Alabama", year: "2009", filename:  "CSV/2009 Alabama.csv", helmet: "Alabama.png" },
+		{ name: "%Texas", year: "2009", filename:  "CSV/2009 Texas.csv", helmet: "Texas.png" },
+		{ name: "Auburn", year: "2010", filename:  "CSV/2010 Auburn.csv", helmet: "Auburn.png" },
+		{ name: "Oregon", year: "2010", filename:  "CSV/2010 Oregon.csv", helmet: "Oregon.png" },
+		{ name: "Alabama", year: "2012", filename:  "CSV/2012 Alabama.csv", helmet: "Alabama.png" },
+		{ name: "Notre Dame", year: "2012", filename:  "CSV/2012 Notre Dame.csv", helmet: "Notre_Dame.png" }
+	]
+};
