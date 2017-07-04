@@ -1,11 +1,11 @@
 <template>
     <div id="mySidenav" class="sidenav">
-        <div class="closebtn" @click="closeNav">&times;</div>
+        <div class="closebtn" @click="closeNav"><img src="/src/assets/CANCEL_CLOSE.bmp"></img></div>
+		<div class="title">{{junk.name}}</div>
 
-		<div style="font-size:32px">{{junk.name}}</div>
         <ul id="example-1">
             <li v-for="item in junk.teams" :key="item.id" style="list-style: none">
-				<v-team-select-item :team="item">
+				<v-team-select-item :team="item" @loadteam="loadteam">
 				</v-team-select-item>					
             </li>
         </ul>
@@ -160,8 +160,12 @@ export default {
         },
         closeNav() {
             console.log("VTeamSelect:closeNav");
-            document.getElementById("mySidenav").style.width = "0";
-        }
+            document.getElementById("mySidenav").style.width = "0px";
+        },
+		loadteam(team, options) {
+			this.closeNav();
+			console.log("loadteam: " + team);
+		}
     },
     mounted() {
     }
@@ -186,31 +190,21 @@ export default {
     transition: 0.5s;
 }
 
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-    color: #1111ff;
-}
-
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 50px;
-    height: 50px;
-    background-color: white;
-    border: 1px solid blue;
-    font-size: 36px;
-    margin-left: 50px;
+    top: 0px;
+    right: 0px;
+    height: 26px;
+	width: 26px;
+}
+
+.sidenav .title {
+	font-size:48px;
+	margin:10px;
+	font-family: Impact;
+	text-shadow: 5px 5px 10px #222222;
+	/*text-shadow: 0 0 10px #0000ff;*/
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */

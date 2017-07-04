@@ -29,7 +29,7 @@ VFootball:
   Field Panel:
     ✔ draw the basic field @done (7/2/2017, 7:38:26 AM)
     ✔ update line of scrimmage @done (7/2/2017, 7:38:27 AM)
-    ☐ update line to make
+    ✔ update line to make @done (7/4/2017, 11:12:48 AM)
     ☐ update ball marker
     ☐ drives
   Text Panel:
@@ -41,9 +41,16 @@ VFootball:
   Teams:
     ☐ some kind of structure to contain teams
     ☐ function to read, and load Teams
-    ☐ ui for selecting Teams
-      ☐ team name
-      ☐ team name with helmet
+    ✔ ui for selecting Teams @done (7/4/2017, 11:13:04 AM)
+      ✔ team name @done (7/4/2017, 11:13:05 AM)
+      ✔ team name with helmet @done (7/4/2017, 11:13:06 AM)
+	✔ Cannot read team ascii files directly because of security reasons (same problem have with Mobile Viewer Store app).  Create .js files with team list and team data which can be included in the code. May try to find way to read datafile later. @done (7/4/2017, 11:16:21 AM)
+	✔ Create team list for SEC, BCS and all Teams. Currently have to switch between by making a code change. Currently only importing .js team files for those just in the SEC @done (7/4/2017, 11:16:22 AM)
+	✔ use a slider to display the teams to select @done (7/4/2017, 11:18:01 AM)
+	☐ make the title look better
+	☐ make the close button look better
+	☐ when a team is selected, load the team data into memory
+	☐ close the slider when team selected
   TeamSelect:
     ✔ slideout panel open when click the home or visitor name on the Scoreboard @done (7/2/2017, 8:23:27 PM)
     ☐ slideout panel closes when a team is selected
