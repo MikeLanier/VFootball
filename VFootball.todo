@@ -47,10 +47,11 @@ VFootball:
 	✔ Cannot read team ascii files directly because of security reasons (same problem have with Mobile Viewer Store app).  Create .js files with team list and team data which can be included in the code. May try to find way to read datafile later. @done (7/4/2017, 11:16:21 AM)
 	✔ Create team list for SEC, BCS and all Teams. Currently have to switch between by making a code change. Currently only importing .js team files for those just in the SEC @done (7/4/2017, 11:16:22 AM)
 	✔ use a slider to display the teams to select @done (7/4/2017, 11:18:01 AM)
-	☐ make the title look better
-	☐ make the close button look better
+	✔ make the title look better @done (7/4/2017, 3:45:37 PM)
+	✔ make the close button look better @done (7/4/2017, 3:45:38 PM)
 	☐ when a team is selected, load the team data into memory
-	☐ close the slider when team selected
+		☐ given the tag for the selected team, get team from javascript equivalent of std::map
+	✔ close the slider when team selected @done (7/4/2017, 3:45:45 PM)
   TeamSelect:
     ✔ slideout panel open when click the home or visitor name on the Scoreboard @done (7/2/2017, 8:23:27 PM)
     ☐ slideout panel closes when a team is selected
