@@ -6,17 +6,6 @@
                     'margin':margin, 
                     'background-color':background_color, 
                     'border': border}">
-        <!-- <div style="border-left:medium white solid; position:absolute; left:100px;" :style="{'height': height}"></div> 
-        <div style="border-left:medium white solid; position:absolute; left:190px;" :style="{'height': height}"></div> 
-        <div style="border-left:medium white solid; position:absolute; left:280px;" :style="{'height': height}"></div> 
-        <div style="border-left:medium white solid; position:absolute; left:370px;" :style="{'height': height}"></div> 
-        <div style="border-left:medium white solid; position:absolute; left:460px;" :style="{'height': height}"></div> 
-        <div style="border-left:medium white solid; position:absolute; left:550px;" :style="{'height': height}"></div> 
-        <div style="border-left:medium white solid; position:absolute; left:640px;" :style="{'height': height}"></div> 
-        <div style="border-left:medium white solid; position:absolute; left:730px;" :style="{'height': height}"></div> 
-        <div style="border-left:medium white solid; position:absolute; left:820px;" :style="{'height': height}"></div> 
-        <div style="border-left:medium white solid; position:absolute; left:910px;" :style="{'height': height}"></div> 
-        <div style="border-left:medium white solid; position:absolute; left:1000px;" :style="{'height': height}"></div> -->
       </div>
     </div>
 </template>
@@ -37,7 +26,10 @@ export default {
       background_color: 'green',
       border: "1px solid white",
       lineofscrimmage: null,
-      linetomake: null
+      linetomake: null,
+	  ball: null,
+	  ball_height: 0,
+	  ball_width: 0
     }
   },
   mounted() {
@@ -202,6 +194,52 @@ export default {
     this.linetomake.style.border = '1px solid yellow';
     field.appendChild(this.linetomake);
 
+	var y = h / 2;
+
+	var xx = new Array(5);
+	var yy = new Array(5);
+
+	this.ball_height = 8 * this.scale;
+	this.ball_width = 5 * this.scale;
+	x -= this.ball_width;
+	this.ball = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+	this.ball.style.position="absolute";
+	this.ball.style.left = x.toString() + "px";
+	this.ball.style.top = y.toString() + "px";
+	this.ball.style.width = this.ball_width.toString() + "px";
+	this.ball.style.height = this.ball_height.toString() + "px";
+	this.ball.style.zIndex = "1";
+	// this.ball.style.backgroundColor = "orange";
+	// this.ball.style.border = "1px solid black";
+	this.ball.style.transform = 'rotate(180deg)';
+	field.appendChild(this.ball);
+
+	xx[0] = 0;
+	yy[0] = this.ball_height / 2;
+	xx[1] = this.ball_width;
+	yy[1] = this.ball_height;
+	xx[2] = this.ball_width;
+	yy[2] = 0;
+	xx[3] = 0;
+	yy[3] = this.ball_height / 2;
+
+	console.log('[0]: ' + xx[0].toString() + ', ' + yy[0].toString());
+	console.log('[1]: ' + xx[1].toString() + ', ' + yy[1].toString());
+	console.log('[2]: ' + xx[2].toString() + ', ' + yy[2].toString());
+	console.log('[3]: ' + xx[3].toString() + ', ' + yy[3].toString());
+
+	var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+	path.setAttribute('d',	"M" + xx[0].toString() + " " + yy[0].toString() + " " +
+							"L" + xx[1].toString() + " " + yy[1].toString() + " " +
+							"L" + xx[2].toString() + " " + yy[2].toString() + " " +
+							"L" + xx[3].toString() + " " + yy[3].toString() + " " +
+							"Z" );
+	path.setAttribute('stroke', "black");
+	path.setAttribute('stroke-width', "1px");
+	path.setAttribute('fill', "brown");
+	this.ball.appendChild(path);
+
+
   }, // mounted
   watch: {
     'gamedata.togo': function() {
@@ -226,9 +264,14 @@ export default {
       var x = this.imargin + 30 * this.scale;
       if(this.gamedata.offense == 0) {
         x = x + (100 - this.gamedata.yardline) * this.scale * 3;
+		var x2 = x - this.ball_width;
+		this.ball.style.transform = 'rotate(180deg)';
+		this.ball.style.left = x2.toString() + 'px';
       }
       else {
         x = x + (this.gamedata.yardline) * this.scale * 3;
+		this.ball.style.transform = 'rotate(0deg)';
+		this.ball.style.left = x.toString() + 'px';
       }
       this.lineofscrimmage.style.left = x.toString() + 'px';
     },

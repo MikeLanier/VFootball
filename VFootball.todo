@@ -1,59 +1,91 @@
 VFootball:
-  EventBus:
-    ☐ create the event bus
-  Debug Panel:
-    ✔ parse debug options @done (6/30/2017, 7:07:43 PM)
-    ✔ option to change down: d,# @done (6/30/2017, 7:07:48 PM)
-    ✔ option to change score: s,h,#: s,v,# @done (6/30/2017, 7:07:49 PM)
-    ✔ option to change quarter: q,# @done (6/30/2017, 7:07:50 PM)
-    ✔ option to change yardline: y,# @done (6/30/2017, 7:07:51 PM)
-    ✔ option to change togo: g,# @done (6/30/2017, 7:07:51 PM)
-    ✔ option to change time: t,# @done (6/30/2017, 7:07:52 PM)
-    ✔ option to change offensive team: o,h: o,v @done (6/30/2017, 7:07:53 PM)
-  Options Panel:
-    ✔ hilite on hover @done (6/30/2017, 10:18:27 AM)
-    ✔ hilite on select @done (6/30/2017, 10:18:28 AM)
-    ☐ post run command on select
-    ✔ unhilite when another button pressed @done (6/30/2017, 10:18:46 AM)
-  Scoreboard Panel:
-    ✔ define template for data on Scoreboard @done (6/30/2017, 7:10:15 PM)
-    ✔ update down on down change @done (6/30/2017, 7:10:09 PM)
-    ✔ update down on togo change @done (6/30/2017, 7:10:12 PM)
-    ☐ update team on team change
-    ✔ update score on score change @done (7/1/2017, 12:59:30 PM)
-    ✔ update ballon on yardline change @done (7/1/2017, 12:59:09 PM)
-    ✔ update ballon on offense change @done (7/1/2017, 12:59:13 PM)
-    ✔ update time on time change @done (6/30/2017, 7:10:22 PM)
-    ☐ update to on to change
-    ✔ update score heading on quarter change @done (7/1/2017, 12:59:19 PM)
-  Field Panel:
-    ✔ draw the basic field @done (7/2/2017, 7:38:26 AM)
-    ✔ update line of scrimmage @done (7/2/2017, 7:38:27 AM)
-    ✔ update line to make @done (7/4/2017, 11:12:48 AM)
-    ☐ update ball marker
-    ☐ drives
-  Text Panel:
-    ☐ display text in a scrolling window
-    ☐ multicolor text
-  Stats Panel:
-    ☐ define template for stats data
-    ☐ update display from template
-  Teams:
-    ☐ some kind of structure to contain teams
-    ☐ function to read, and load Teams
-    ✔ ui for selecting Teams @done (7/4/2017, 11:13:04 AM)
-      ✔ team name @done (7/4/2017, 11:13:05 AM)
-      ✔ team name with helmet @done (7/4/2017, 11:13:06 AM)
-	✔ Cannot read team ascii files directly because of security reasons (same problem have with Mobile Viewer Store app).  Create .js files with team list and team data which can be included in the code. May try to find way to read datafile later. @done (7/4/2017, 11:16:21 AM)
-	✔ Create team list for SEC, BCS and all Teams. Currently have to switch between by making a code change. Currently only importing .js team files for those just in the SEC @done (7/4/2017, 11:16:22 AM)
-	✔ use a slider to display the teams to select @done (7/4/2017, 11:18:01 AM)
-	✔ make the title look better @done (7/4/2017, 3:45:37 PM)
-	✔ make the close button look better @done (7/4/2017, 3:45:38 PM)
-	☐ when a team is selected, load the team data into memory
-		☐ given the tag for the selected team, get team from javascript equivalent of std::map
-	✔ close the slider when team selected @done (7/4/2017, 3:45:45 PM)
-  TeamSelect:
-    ✔ slideout panel open when click the home or visitor name on the Scoreboard @done (7/2/2017, 8:23:27 PM)
-    ☐ slideout panel closes when a team is selected
-    ☐ read the list of teams
-    ☐ display the teams in a list control
+	EventBus:
+		☐ create the event bus
+	Debug Panel:
+		✔ parse debug options @done (6/30/2017, 7:07:43 PM)
+		✔ option to change down: d,# @done (6/30/2017, 7:07:48 PM)
+		✔ option to change score: s,h,#: s,v,# @done (6/30/2017, 7:07:49 PM)
+		✔ option to change quarter: q,# @done (6/30/2017, 7:07:50 PM)
+		✔ option to change yardline: y,# @done (6/30/2017, 7:07:51 PM)
+		✔ option to change togo: g,# @done (6/30/2017, 7:07:51 PM)
+		✔ option to change time: t,# @done (6/30/2017, 7:07:52 PM)
+		✔ option to change offensive team: o,h: o,v @done (6/30/2017, 7:07:53 PM)
+		GamePlay:
+	Options Panel:
+		✔ hilite on hover @done (6/30/2017, 10:18:27 AM)
+		✔ hilite on select @done (6/30/2017, 10:18:28 AM)
+		☐ post run command on select
+		☐ Offense/Defense plays hilite independent of each other
+		✔ unhilite when another button pressed @done (6/30/2017, 10:18:46 AM)
+	Scoreboard Panel:
+		✔ define template for data on Scoreboard @done (6/30/2017, 7:10:15 PM)
+		✔ update down on down change @done (6/30/2017, 7:10:09 PM)
+		✔ update down on togo change @done (6/30/2017, 7:10:12 PM)
+		☐ update team on team change
+		✔ update score on score change @done (7/1/2017, 12:59:30 PM)
+		✔ update ballon on yardline change @done (7/1/2017, 12:59:09 PM)
+		✔ update ballon on offense change @done (7/1/2017, 12:59:13 PM)
+		✔ update time on time change @done (6/30/2017, 7:10:22 PM)
+		☐ update timeout on timeout change
+		✔ update score heading on quarter change @done (7/1/2017, 12:59:19 PM)
+	Field Panel:
+		✔ draw the basic field @done (7/2/2017, 7:38:26 AM)
+		✔ update line of scrimmage @done (7/2/2017, 7:38:27 AM)
+		✔ update line to make @done (7/4/2017, 11:12:48 AM)
+		✔ update ball marker @done (7/5/2017, 10:49:31 AM)
+		☐ drives
+	Text Panel:
+		☐ display text in a scrolling window
+		☐ multicolor text
+	Stats Panel:
+		☐ define template for stats data
+		☐ update display from template
+	Teams:
+		☐ some kind of structure to contain teams
+		☐ function to read, and load Teams
+		✔ ui for selecting Teams @done (7/4/2017, 11:13:04 AM)
+			✔ team name @done (7/4/2017, 11:13:05 AM)
+			✔ team name with helmet @done (7/4/2017, 11:13:06 AM)
+		✔ Cannot read team ascii files directly because of security reasons (same problem have with Mobile Viewer Store app).  Create .js files with team list and team data which can be included in the code. May try to find way to read datafile later. @done (7/4/2017, 11:16:21 AM)
+		✔ Create team list for SEC, BCS and all Teams. Currently have to switch between by making a code change. Currently only importing .js team files for those just in the SEC @done (7/4/2017, 11:16:22 AM)
+		✔ use a slider to display the teams to select @done (7/4/2017, 11:18:01 AM)
+		✔ make the title look better @done (7/4/2017, 3:45:37 PM)
+		✔ make the close button look better @done (7/4/2017, 3:45:38 PM)
+		☐ when a team is selected, load the team data into memory
+			✔ given the tag for the selected team, get team from javascript equivalent of std::map @done (7/5/2017, 6:37:58 AM)
+			☐ create a class for JResults
+			☐ create a class for JStats
+		✔ close the slider when team selected @done (7/4/2017, 3:45:45 PM)
+	TeamSelect:
+		✔ slideout panel open when click the home or visitor name on the Scoreboard @done (7/2/2017, 8:23:27 PM)
+		✔ slideout panel closes when a team is selected @done (7/5/2017, 6:36:19 AM)
+		☐ read the list of teams.  Not able to read the local file. created .js version which I could include in the source
+			☐ some kind of UI to show and select which list of teams to show
+		✔ display the teams in a list control @done (7/5/2017, 6:37:42 AM)
+	GamePlay:
+		☐ debug: create list of JResult items
+			☐ show each JResult item on field
+			☐ key in run option and process GamePlay
+		Kickoff:
+			☐ 
+		Rush:
+			Gain/Loss:
+			Firstdown:
+			Fumble:
+			B:
+		Pass:
+			Incomplete:
+			Complete:
+			Interception:
+			Fumble:
+			QR:
+			QT:
+			B:
+			SOP:
+			BLP:
+		Punt:
+			PuntReturn:
+		Touchdown:
+		Safety:
+		Fumble:
+		Penalty:
