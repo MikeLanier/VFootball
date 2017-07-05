@@ -304,7 +304,9 @@ export default {
 				}
 			}
 
-			var team = new JTeam(this.team);
+			console.log('this.gamedata.who: ' + this.gamedata.who);
+			this.gamedata.teams[this.gamedata.who] = new JTeam(this.team);
+			this.gamedata.teams[this.gamedata.who].load(this.team.stuff);
 		}
     },
     mounted() {

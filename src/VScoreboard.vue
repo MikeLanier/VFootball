@@ -48,7 +48,7 @@ export default {
             quarter1background: 'yellow',
             quarter2background: 'white',
             quarter3background: 'white',
-            quarter4background: 'white',
+            quarter4background: 'white'
         }
     },
     watch: {
@@ -164,10 +164,12 @@ export default {
         hometeamselect() {
             console.log("scoreboard:hometeamselect");
             document.getElementById("mySidenav").style.width = "400px";
+			this.gamedata.who = 0;
         },
         visitorteamselect() {
             console.log("scoreboard:visitorteamselect");
             document.getElementById("mySidenav").style.width = "400px";
+			this.gamedata.who = 1;
         }
     }
 }

@@ -6,7 +6,7 @@
     <div class="options black-border"><v-options :gamedata="gamedata"></v-options></div>
     <div class="stats black-border"><v-stats :gamedata="gamedata"></v-stats></div>
     <div class="debug black-border"><v-debug :gamedata="gamedata"></v-debug></div>
-    <v-team-select></v-team-select>
+    <v-team-select :gamedata="gamedata"></v-team-select>
   </div>
 </template>
 
@@ -17,52 +17,36 @@ import VText from "./VText.vue"
 import VOptions from "./VOptions.vue"
 import VStats from "./VStats.vue"
 import VDebug from "./VDebug.vue"
-import JTeam from "./JTeam.js"
 import VTeamSelect from "./VTeamSelect.vue"
 
 export default {
-  name: 'v-football',
-  components: { VScoreboard, VField, VText, VOptions, VStats, VDebug, VTeamSelect },
+	name: 'v-football',
+	components: { VScoreboard, VField, VText, VOptions, VStats, VDebug, VTeamSelect },
 
-  data() {
-    return {
-      gamedata: {
-        trigger: 0,
-        offense: 0,
-        defense: 1,
-        score: [
-          [ 1, 2, 3, 4, 5 ],
-          [ 6, 7, 8, 9, 10 ]
-        ],
-        quarter: 1,
-        down: 1,
-        yardline: 0,
-        togo: 10,
-        time: 900,
-        to: [ 3, 3 ],
-        name: [ 'HOME', 'VISITOR' ]
-      }
-    }
-  },
+	data() {
+		return {
+			gamedata: {
+				trigger: 0,
+				offense: 0,
+				defense: 1,
+				score: [
+				[ 1, 2, 3, 4, 5 ],
+				[ 6, 7, 8, 9, 10 ]
+				],
+				quarter: 1,
+				down: 1,
+				yardline: 0,
+				togo: 10,
+				time: 900,
+				to: [ 3, 3 ],
+				name: [ 'HOME', 'VISITOR' ],
+				teams: [ null, null ],
+				who: 0
+			}
+		}
+	},
   mounted: function() {
     console.log('mounted: ')
-    var gd = {
-      home: 1,
-      visitor: 0,
-      offense: 1,
-      defense: 0,
-      score: [
-        [ 1, 2, 3, 4, 5 ],
-        [ 6, 7, 8, 9, 10 ]
-      ],
-      quarter: 1,
-      down: 1,
-      yardline: 60,
-      togo: 10,
-      time: 900,
-      to: [ 3, 3 ],
-//        teams: [ new JTeam(), new JTeam() ]
-    }
   },
   methods: {
   }
