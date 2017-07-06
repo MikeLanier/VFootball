@@ -1,4 +1,5 @@
 import {JResult} from "./JResult";
+import {JStats} from "./JStats";
 
 export class JTeam {
 	constructor(team) {
@@ -12,6 +13,7 @@ export class JTeam {
 		this.helmet = "";
 		this.abrv = "";
 		this.fumble = 0;
+		this.stats = new JStats();
 
 		this.offenseResult = new Array(30);
 		for(var i=0; i<30; i++)

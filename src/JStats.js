@@ -1,19 +1,72 @@
+var points = 0;
+
+var first_downs = 0;
+
+var total_yards = 0;
+var total_plays = 0;
+var total_touchdowns = 0;
+var total_safeties = 0;
+var total_fumbles = 0;
+var total_fumbles_lost = 0;
+
+var rush_yards = 0;
+var rush_carries = 0;
+var rush_touchdowns = 0;
+//var rush_fumbles = 0;
+//var rush_fumbles_lost = 0;
+
+var pass_yards = 0;
+var pass_attempts = 0;
+var pass_completions = 0;
+var pass_touchdowns = 0;
+//var pass_fumbles = 0;
+//var pass_fumbles_lost = 0;
+var pass_interceptions = 0;
+var pass_sacks = 0;
+var interception_returns = 0;
+var interception_return_yards = 0;
+var interception_return_touchdowns = 0;
+//var interception_return_fumbles = 0;
+//var interception_return_fumbles_lost = 0;
+
+var punts = 0;
+var punt_yards = 0;
+var punts_returned = 0;
+var punts_blocked = 0;
+var punt_returns = 0;
+var punt_return_yards = 0;
+var punt_return_touchdowns = 0;
+//var punt_return_fumbles = 0;
+//var punt_return_fumbles_lost = 0;
+
+var kickoffs = 0;
+var kickoff_yards = 0;
+var kickoffs_returned = 0;
+var kickoff_returns = 0;
+var kickoff_return_yards = 0;
+var kickoff_return_touchdowns = 0;
+//var kickoff_return_fumbles = 0;
+//var kickoff_return_fumbles_lost = 0;
+
+var fieldgoal_attempts = 0;
+var fieldgoals_made = 0;
+var fieldgoals_blocked = 0;
+
+var extrapoint_attempts = 0;
+var extrapoints_made = 0;
+var extrapoints_blocked = 0;
+
+var penalties = 0;
+var penalty_yards = 0;
+
 export class JStats
 {
-	points = 0;
+	constructor()
+	{
+	}
 
 	Points(_points)	{ points+=_points; }
-
-	first_downs = 0;
-
 	FirstDown()    {first_downs++;}
-
-	total_yards = 0;
-	total_plays = 0;
-	total_touchdowns = 0;
-	total_safeties = 0;
-	total_fumbles = 0;
-	total_fumbles_lost = 0;
 
 	TotalYards(yards)
 	{
@@ -35,12 +88,6 @@ export class JStats
 		if(lost)    total_fumbles_lost++;
 	}
 
-	rush_yards = 0;
-	rush_carries = 0;
-	rush_touchdowns = 0;
-	//rush_fumbles = 0;
-	//rush_fumbles_lost = 0;
-
 	Rush(yards)
 	{
 		rush_yards+=yards;
@@ -60,15 +107,6 @@ export class JStats
 	//	if(lost)    rush_fumbles_lost++;
 	//	TotalFumbles(lost);
 	//}
-
-	pass_yards = 0;
-	pass_attempts = 0;
-	pass_completions = 0;
-	pass_touchdowns = 0;
-	//pass_fumbles = 0;
-	//pass_fumbles_lost = 0;
-	pass_interceptions = 0;
-	pass_sacks = 0;
 
 	Pass(yards)
 	{
@@ -99,12 +137,6 @@ export class JStats
 	PassInterception()	{	pass_interceptions++;	}
 	Sack() { pass_sacks++; }
 
-	interception_returns = 0;
-	interception_return_yards = 0;
-	interception_return_touchdowns = 0;
-	//interception_return_fumbles = 0;
-	//interception_return_fumbles_lost = 0;
-
 	InterceptionReturn(yards)
 	{
 		interception_returns++;
@@ -120,11 +152,6 @@ export class JStats
 	//	TotalFumbles(lost);
 	//}
 
-	punts = 0;
-	punt_yards = 0;
-	punts_returned = 0;
-	punts_blocked = 0;
-
 	Punt(yards)
 	{
 		punts++;
@@ -137,12 +164,6 @@ export class JStats
 	{
 		punts_blocked++;
 	}
-
-	punt_returns = 0;
-	punt_return_yards = 0;
-	punt_return_touchdowns = 0;
-	//punt_return_fumbles = 0;
-	//punt_return_fumbles_lost = 0;
 
 	PuntReturn(yards)
 	{
@@ -163,10 +184,6 @@ export class JStats
 	//	TotalFumbles(lost);
 	//}
 
-	kickoffs = 0;
-	kickoff_yards = 0;
-	kickoffs_returned = 0;
-
 	Kickoff(yards)
 	{
 		kickoffs++;
@@ -174,12 +191,6 @@ export class JStats
 	}
 
 	KickoffReturned()   { kickoffs_returned++; }
-
-	kickoff_returns = 0;
-	kickoff_return_yards = 0;
-	kickoff_return_touchdowns = 0;
-	//kickoff_return_fumbles = 0;
-	//kickoff_return_fumbles_lost = 0;
 
 	KickoffReturn(yards)
 	{
@@ -196,10 +207,6 @@ export class JStats
 	//	TotalFumbles(lost);
 	//}
 
-	fieldgoal_attempts = 0;
-	fieldgoals_made = 0;
-	fieldgoals_blocked = 0;
-
 	Fieldgoal(made)
 	{
 		fieldgoal_attempts++;
@@ -207,10 +214,6 @@ export class JStats
 	}
 
 	FieldgoalBlocked()  { fieldgoals_blocked++; }
-
-	extrapoint_attempts = 0;
-	extrapoints_made = 0;
-	extrapoints_blocked = 0;
 
 	ExtraPoint(made)
 	{
@@ -220,17 +223,10 @@ export class JStats
 
 	ExtraPointBlocked() { extrapoints_blocked++; }
 
-	penalties = 0;
-	penalty_yards = 0;
-
 	Penalty(yards)
 	{
 		penalties++;
 		penalty_yards+=yards;
-	}
-
-	constructor()
-	{
 	}
 
 	copy(stats)
